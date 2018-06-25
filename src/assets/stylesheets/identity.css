@@ -5,6 +5,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  font-family: EuclidFlex-Regular Roboto;
   line-height: 1.5rem;
 }
 strong{
@@ -13,6 +14,7 @@ strong{
 em{
   font-style: italic;
 }
+
 h1{
   font-size: 47.78px;
   font-weight: 900;
