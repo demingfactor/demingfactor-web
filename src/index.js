@@ -1,4 +1,4 @@
-// require('typeface-montserrat')
+import './assets/stylesheets/fonts.css'
 import './assets/stylesheets/layout.css'
 import './assets/stylesheets/animations.css'
 import './assets/stylesheets/functions.css'

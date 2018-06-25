@@ -82,9 +82,9 @@ module.exports = {
       from: '*.svg',
       to: path.resolve(__dirname, 'docs/assets/stylesheets')
     }, {
-      context: 'src/assets/stylesheets',
-      from: '*.svg',
-      to: path.resolve(__dirname, 'docs/assets/stylesheets')
+      context: 'src/assets/stylesheets/fonts',
+      from: /\.(woff|woff2|eot|ttf|otf)$/,
+      to: path.resolve(__dirname, 'docs/assets/stylesheets/fonts')
     }]),
     new HtmlWebpackPlugin({
       inject: true,
