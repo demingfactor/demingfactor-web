@@ -8,6 +8,11 @@ body{
   font-family: EuclidFlex;
   line-height: 1.5rem;
 }
+section{
+  max-width: 35rem; // setting a nice measure on copy.
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 strong{
   font-weight: 700;
 }
