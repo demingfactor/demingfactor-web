@@ -1,25 +1,48 @@
 const webpack = require('webpack')
 
-// Autogenerates index.js into a index.html with auto script tags
-const HtmlWebpackPlugin = require('html-webpack-plugin') //
+//////////////////////////////////////////////////////////////////////
+// 1. ADD LOADERS TO HELP WEBPACK UNDERSTAND THINGS.
+// By defauly Webpack nativley only understands JS.
+// Use Loaders to help webpack understand more filetypes.
+//////////////////////////////////////////////////////////////////////
 
-// Purges unused CSS (Great for use with a style framework like Tailwind)
-const PurgecssPlugin = require('purgecss-webpack-plugin')
+  // Enable Webpack to read common non-JS files
+  const FileLoader = require("file-loader");
 
-// Wipes docs directory on recompiling, keeping the directory clean.
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+  // Enable Webpack to read common non-JS files and make small file into embedded data
+  const UrlLoader = require("url-loader");
 
-// Bundles (CSS) to own CSS file rather than embedded in CSS.
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+//////////////////////////////////////////////////////////////////////
+// 2A. ADD PLUGINS THAT DO CONVERSIONS BETWEEN THINGS
+//////////////////////////////////////////////////////////////////////
 
-const UrlLoader = require("url-loader");
-const FileLoader = require("file-loader");
+  // Autogenerates index.js into a index.html with auto script tags
+  const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+  // Bundles (CSS) to own CSS file rather than embedded in CSS.
+  const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const tailwindcss = require('tailwindcss')
-const glob = require('glob')
-const path = require('path')
+  const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+//////////////////////////////////////////////////////////////////////
+// 2B. ADD PLUGINS THAT TIDY UP THINGS
+//////////////////////////////////////////////////////////////////////
+
+  // Purges unused CSS (Great for use with a style framework like Tailwind)
+  const PurgecssPlugin = require('purgecss-webpack-plugin')
+
+  // Wipes docs directory on recompiling, keeping the directory clean.
+  const CleanWebpackPlugin = require('clean-webpack-plugin')
+
+//----------------------------------------------------------------------//
+
+//////////////////////////////////////////////////////////////////////
+// 3. Set some constants
+//////////////////////////////////////////////////////////////////////
+
+const tailwindcss = require('tailwindcss');
+const path = require('path');
+const isProd = process.env.NODE_ENV === 'production'
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in
 // class names.
@@ -31,50 +54,45 @@ class TailwindExtractor {
   }
 }
 
-const isProd = process.env.NODE_ENV === 'production'
+//---------------------  Real code starts here  ------------------------//
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: path.resolve(__dirname, 'docs'),
-    filename: '[name].[chunkhash:8].js',
-    chunkFilename: '[name].[chunkhash:8].js',
-    publicPath: './'
-  },
+  entry: ['./src/index.js'],
   module: {
     rules: [{
         test: /\.(png|jp(e*)g|svg)$/,
         use: [{
-          loader: 'url-loader',
+          loader: 'url-loader', // url-loader defaults back to loading with file-loader if size over size limit.
           options: {
-            limit: 8000, // Convert images < 8kb to base64 strings
+            limit: 8000, // Convert files < 8kb to base64 strings
             name: 'assets/images/[hash]-[name].[ext]'
           }
         }]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
+        use: [{
+          loader: 'url-loader', // url-loader defaults back to loading with file-loader if size over size limit.
+          options: {
+            limit: 8000, // Convert files < 8kb to base64 strings
+            name: 'assets/fonts/[name].[ext]'
+          }
+        }]
       }
     ]
   },
   plugins: [
-    // Clean the 'docs' folder in production
+    // Clean the 'docs' folder before each build is run
     isProd && new CleanWebpackPlugin(['docs']),
-    new ExtractTextPlugin('[name].[contenthash:8].css'),
-    // Scan all the files in the 'src' folder and remove
-    // unused class names in production
     isProd && new PurgecssPlugin({
       paths: glob.sync(path.join(__dirname, 'src') + '/**/*'),
       extractors: [{
         extractor: TailwindExtractor,
-        // Specify the file extensions to include when scanning for
-        // class names.
+        // File extensions to include when scanning for class names.
         extensions: ['html', 'js']
       }]
     }),
+    new ExtractTextPlugin('[name].css'),
     new CopyWebpackPlugin([{
       context: 'src/assets/stylesheets/',
       from: '*.css',
@@ -88,13 +106,14 @@ module.exports = {
       from: '*.svg',
       to: path.resolve(__dirname, 'docs/assets/stylesheets')
     }, {
-      context: 'src/assets/stylesheets',
-      from: '*.svg',
-      to: path.resolve(__dirname, 'docs/assets/stylesheets')
+      context: 'src/assets/stylesheets/fonts',
+      from: '*/*',
+      test: /\.(woff|woff2|eot|ttf|otf)$/,
+      to: path.resolve(__dirname, 'docs/assets/stylesheets/fonts')
     }]),
     new HtmlWebpackPlugin({
       inject: true,
-      template: './src/template.html',
+      template: './src/index.html',
       minify: isProd && {
         removeComments: true,
         collapseWhitespace: true,
@@ -108,6 +127,5 @@ module.exports = {
         minifyURLs: true
       }
     }),
-    isProd && new webpack.optimize.UglifyJsPlugin()
   ].filter(Boolean)
 }
