@@ -5,7 +5,13 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  font-family: EuclidFlex;
   line-height: 1.5rem;
+}
+section{
+  max-width: 35rem; // setting a nice measure on copy.
+  padding-left:  1.5rem;
+  padding-right: 1.5rem;
 }
 strong{
   font-weight: 700;
@@ -13,6 +19,7 @@ strong{
 em{
   font-style: italic;
 }
+
 h1{
   font-size: 47.78px;
   font-weight: 900;

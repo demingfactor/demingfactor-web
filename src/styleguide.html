@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Styleguide</title>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  </head>
+
+  <body class="">
+    <header>
+      <nav class="relative w0 h-100 z-0 bg-rb-white overflow-x-hidden shadow-4 fixed" id="mySidenav">
+        <div class="flex justify-center pt3 h3 w100 bg-rb-red">
+          <a href="#"><span class="logo"></span></a>
+          <a href="javascript:void(0)" class="pl5 relative f3 no-underline rb-white pointer:hover " id="closeNavBtn">&times;</a>
+        </div>
+        <div id='' class=''>
+        </div>
+      </nav>
+    </header>
+    <main class="" id="">
+      <div class="">
+        <!-- <span class="f2 pl3 rb-purple pointer:hover dn-m dn-l" id="openNav">&#9776;</span> -->
+        <section class="">
+          <h1 class="">RubyAU Style Guide</h1>
+        </section>
+      </div>
+      <section class="">
+        <p>The RubyAU Style guide is designed as a reference to review and implement styles on the Ruby AU homepage. The CSS styles are built using the tachyons library, and code can be copied and implemented into any HTML files.</p>
+      </section>
+      <section class="">
+        <h1>Typefaces</h1>
+        <div>
+          <p>
+            There are two typefaces used across the Ruby AU webpage;
+            <strong>Poppins</strong> &amp; <strong>Anonymous Pro</strong>
+          </p>
+          <h3>Poppins - primary</h3>
+          <p><strong>Poppins</strong>, is a geometric sans serif typeface. Each letterform is nearly monolinear, with optical corrections applied to stroke joints where necessary to maintain an even typographic colour.
+          </p>
+        </div>
+        <div class="">
+          <h3>Anonymous Pro - secondary</h3>
+          <p>
+            <strong>Secondary Typeface Anonymous Pro</strong>, is a family of four fixed-width fonts designed especially with coding in mind. It is inspired by Anonymous 9, a freeware Macintosh bitmap font developed in the mid-'90s that was intended as
+            a more legible alternative to Monaco.
+          </p>
+        </div>
+        <div>
+          <h2>Typographic Measure - Line length</h2>
+          <p>An effective line length helps greatly in making text readable.</p>
+          <p>To help enforce a consistent measure on all body copy, we use the convention, that section tags provide this constraint.</p>
+          <p>Use a section tag around your body copy and any elements that you want to fit within the line measure. This approach is neutral to if you place a single section inside your body or define multiple sections.
+            <p>Just avoid nesting sections, to avoid the restriction applying twice, use a div or article tag instead.</p>
+            <p>Elements that you want to run edge-to-edge of the screen, like background images should be placed outside of section tags. Most elements, however, will likely be within this tag.</p>
+            <section class="">
+              <p>Our measure is achieved with a max-width of 660px.</p>
+            </section>
+        </div>
+        </div>
+        <div>
+          <h1>Headings</h1>
+          <h2>Heading 1</h2>
+          <p class="">47.372px/60 line height, set in Poppins Bold.</p>
+          <h1 class="">Major Heading</h1>
+          <h2>Heading 2</h2>
+          <p class="">26.66px/36 line height, set in Poppins Bold.</p>
+          <h2 class="">Sub Heading</h2>
+          <h2>Heading 3</h2>
+          <p class="">26.66px/45 line height, set in Poppins Bold.</p>
+          <h3 class="">Article Lead</h3>
+          <h2>Heading 4</h2>
+          <p class="">20px/30 line height, set in Poppins Bold.</p>
+          <h4 class="">Minor Heading</h4>
+        </div>
+        <div>
+          <h1>Text Formatting</h1>
+          <h2>Paragraph text</h2>
+          <p class="">20px/30 line height 30, set in Poppins Regular</p>
+          <p class="">Ruby is a beautiful programming language that was created in Japan for the unique purpose of programmer happiness. We’re big on happiness and welcome you to join us; be you a beginner, pro or even if you don’t code or use ruby at all.</p>
+        </div>
+        <div>
+          <h2>Emphasised text</h2>
+          <p class="">Why not add a little <em>emphasis?</em></p>
+        </div>
+        <div>
+          <h2>Strong text</h2>
+          <p class="">Say it nice and <strong>strong</strong>.</p>
+        </div>
+        <div>
+          <h2>Code text</h2>
+          <p>Use the code tag to add inline code examples:</p>
+          <p>Like this example <code class="">def hello; puts "Hey there!"; end</code></p>
+          Combine with a pre tag to preserve significant whitespace:
+          <pre class=""><code class=""># example code with pre tag
+def hello;
+  puts "Hey there!";
+end</code></pre>
+        </div>
+        <div>
+          <h2>Block Quotes</h2>
+          <blockquote cite="http://ruby.org.au" class="">
+            Matz is nice, so we are nice.
+          </blockquote>
+        </div>
+        <div>
+          <h1>Lists</h1>
+          <h2>Ordered</h2>
+          <ol class="">
+            <li>Ordered List Item</li>
+            <li>Ordered List Item</li>
+            <li>Ordered List Item</li>
+          </ol>
+          <h2>Unordered</h2>
+          <h3>Standard</h3>
+          <ul class="">
+            <li>Unordered List Item</li>
+            <li>Unordered List Item</li>
+            <li>Unordered List Item</li>
+          </ul>
+          <h3>Bullets</h3>
+          <ul class="">
+            <li>Unordered List Item</li>
+            <li>Unordered List Item</li>
+            <li>Unordered List Item</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="">Links</h1>
+          <h2>Address Links</h2>
+          <a class="" href="hello-world.html">I'm a link</a>
+          <h2>External Links</h2>
+          <a class="" href="http://youtube.com">RubyAU YouTube Channel</a>
+          <h1 id="button">Buttons</h1>
+          <div class="">
+            <a href="#button" class="">Primary</a>
+            <a class="">Disabled</a>
+          </div>
+        </div>
+        <div>
+          <h1 class="">Forms</h1>
+          <div>
+            <form class="" action="" method="post">
+              <input class="label w5" type="text" name="Label" value="" placeholder="Label" autofocus>
+              <textarea class="" name="text-area" rows="8" cols="80" placeholder="What's on your mind?"></textarea>
+              <button class=" " type="button" name="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div>
+          <h1 class="">Tables</h1>
+          <table class="">
+            <thead>
+              <tr>
+                <th class="">Table Header</th>
+                <th class="">Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="">Table Data</td>
+                <td class="">1000</td>
+              </tr>
+              <tr>
+                <td class="">Table Data</td>
+                <td class="">2000</td>
+              </tr>
+              <tr>
+                <td class="">Table Data</td>
+                <td class="">3000</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="">Footer</td>
+                <td class="">6000</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div>
+          <h1 class="">Colour</h1>
+          <h4>Primary Palette</h4>
+          <div class="">
+            <span class="">
+            <div class=""></div>
+            <strong>rb-red</strong>
+            <p>#FF0162</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-purple</strong>
+            <p>#7D1EF0</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-pink</strong>
+            <p>#F01E91</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-blue</strong>
+            <p>#1EF0E6</p>
+          </span>
+          </div>
+          <h4>Greys</h4>
+          <div class="">
+            <span class="">
+            <div class=""></div>
+            <strong>rb-grey</strong>
+            <p>#595859</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-grey80</strong>
+            <p>#9B9B9B</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-grey50</strong>
+            <p>#C9C7CA</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-grey30</strong>
+            <p>#E8E5E9</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>black</strong>
+            <p>#000000</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>white</strong>
+            <p>#ffffff</p>
+          </span>
+          </div>
+          <h4>Secondary Reds</h4>
+          <div class="">
+            <span class="">
+            <div class=""></div>
+            <strong>rb-dark-red</strong>
+            <span><p>#800131</p></span>
+            </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-dark-red50</strong>
+            <p>#D8055A</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-light-red</strong>
+            <p>#FF3481</p>
+          </span>
+            <span class="">
+            <div class=""></div>
+            <strong>rb-light-red50</strong>
+            <p>#FF99C0</p>
+          </span>
+          </div>
+      </section>
+    </main>
+  </body>
+
+</html>
