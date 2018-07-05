@@ -79,7 +79,7 @@ header{
 }
 
 main{
-  @apply .py-6;
+  @apply .pb-6;
 }
 
 footer{
@@ -104,38 +104,44 @@ em{
 
 h1{
   @apply .text-5xl .leading-none .font-bold
-  .mb-12 ;
+  .pb-12 ;
 }
 h2{
   @apply .text-4xl .leading-none .font-bold
-  .mb-6 ;
+  .pt-6 .pb-3 ;
 }
 h3{
   @apply .text-3xl .leading-tight .font-bold
-  .mb-6 ;
+  .pb-6 ;
 }
 h4{
   @apply .text-2xl .leading-normal .font-medium;
 }
 h5{
     @apply .text-2xl .leading-normal .font-light
-    .mb-12;
+    .pb-12;
 }
 h6{
   @apply .text-lg .leading-normal .font-normal;
 }
 p{
-  @apply .text-base .leading-normal .font-normal .mb-6;
+  @apply .text-base .leading-normal .font-normal .pt-3 .pb-3;
 }
 aside{
-  @apply .text-base .leading-normal .font-normal .mb-12;
+  @apply .text-base .leading-normal .font-normal .pb-12;
 }
 
 ol{
   margin: 0 0 1.5rem 0;
 }
 ul{
-  @apply .mb-6 .list-reset;
+  @apply .pb-6 .list-reset;
+}
+li{
+  @apply .pb-3;
+}
+li:last-child{
+  @apply pb-0
 }
 code{
   font-family: monospace;
@@ -188,8 +194,8 @@ blockquote{
 }
 
 figure{
-  @apply .my-6;
+  @apply .pt-3 .pb-6;
 }
 figcaption{
-  @apply .mb-6 .text-center;
+  @apply .pb-6 .text-center;
 }
