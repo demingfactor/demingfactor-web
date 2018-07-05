@@ -1,3 +1,136 @@
+/* Functions.css - Classes only, max length 9 characters */
+/* font.css - custom font elements only, no classes or ids */
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 600;
+  src: url(./assets/fonts/EuclidFlex-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 600;
+  src: url(./assets/fonts/EuclidFlex-BoldItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./assets/fonts/EuclidFlex-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 300;
+  src: url(./assets/fonts/EuclidFlex-LightItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./assets/fonts/EuclidFlex-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 500;
+  src: url(./assets/fonts/EuclidFlex-MediumItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/EuclidFlex-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 400;
+  src: url(./assets/fonts/EuclidFlex-RegularItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 200;
+  src: url(./assets/fonts/EuclidFlex-Ultralight.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 200;
+  src: url(./assets/fonts/EuclidFlex-UltralightItalic.otf) format("opentype");
+}
+/* layout.css - layout code only  */
+/* Animations.css - keyframe code only  */
+/* Faster page loads by late loading youtube only on click */
+
+/* Thanks to Amit Agarwal https://www.labnol.org/internet/light-youtube-embeds/27941/ */
+
+.youtube-player {
+  position: relative;
+  padding-bottom: 56.23%;
+  /* Use 75% for 4:3 videos */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 5px;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+.youtube-player img {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+     -moz-transition: .4s all;
+          transition: .4s all;
+}
+
+.youtube-player img:hover {
+  -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("") no-repeat;
+  cursor: pointer;
+}
+/* Variables.css - CSS Variables Only */
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -20834,81 +20967,6 @@ button,
     z-index: auto;
   }
 }
-/* font.css - custom font elements only, no classes or ids */
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 600;
-  src: url(./assets/fonts/EuclidFlex-Bold.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 600;
-  src: url(./assets/fonts/EuclidFlex-BoldItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 300;
-  src: url(./assets/fonts/EuclidFlex-Light.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 300;
-  src: url(./assets/fonts/EuclidFlex-LightItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 500;
-  src: url(./assets/fonts/EuclidFlex-Medium.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 500;
-  src: url(./assets/fonts/EuclidFlex-MediumItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 400;
-  src: url(./assets/fonts/EuclidFlex-Regular.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 400;
-  src: url(./assets/fonts/EuclidFlex-RegularItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 200;
-  src: url(./assets/fonts/EuclidFlex-Ultralight.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 200;
-  src: url(./assets/fonts/EuclidFlex-UltralightItalic.otf) format("opentype");
-}
-/* layout.css - layout code only  */
-/* Animations.css - keyframe code only  */
-/* Variables.css - CSS Variables Only */
-/* Functions.css - Classes only, max length 9 characters */
 /* Identity.css - Native html elements only, no classes or ids */
 
 /**
@@ -41941,63 +41999,5 @@ figcaption {
     z-index: auto;
   }
 }
-/* Faster page loads by late loading youtube only on click */
 
-/* Thanks to Amit Agarwal https://www.labnol.org/internet/light-youtube-embeds/27941/ */
-
-.youtube-player {
-  position: relative;
-  padding-bottom: 56.23%;
-  /* Use 75% for 4:3 videos */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
-  margin: 5px;
-}
-
-.youtube-player iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background: transparent;
-}
-
-.youtube-player img {
-  bottom: 0;
-  display: block;
-  left: 0;
-  margin: auto;
-  max-width: 100%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  height: auto;
-  cursor: pointer;
-  -webkit-transition: .4s all;
-     -moz-transition: .4s all;
-          transition: .4s all;
-}
-
-.youtube-player img:hover {
-  -webkit-filter: brightness(75%);
-}
-
-.youtube-player .play {
-  height: 72px;
-  width: 72px;
-  left: 50%;
-  top: 50%;
-  margin-left: -36px;
-  margin-top: -36px;
-  position: absolute;
-  background: url("") no-repeat;
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=main.84e1c5b7.css.map*/
