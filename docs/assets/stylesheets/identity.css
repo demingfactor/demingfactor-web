@@ -1,65 +1,141 @@
 /* Identity.css - Native html elements only, no classes or ids */
 
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
 html{
   font-size:  16px;
   scroll-behavior: smooth;
 }
+
 body{
-  line-height: 1.5rem;
+  font-family: EuclidFlex;
+  line-height: 1.5;
 }
+
+header{
+  @apply .py-6;
+}
+
+main{
+  @apply .py-6;
+}
+
+footer{
+  @apply .py-6;
+}
+
+nav{
+  @apply .px-6 .text-2xl;
+}
+
+section, hgroup{
+  @apply .max-w-md .px-6 .py-6;
+}
+
 strong{
-  font-weight: 700;
+  @apply .font-bold;
 }
+
 em{
-  font-style: italic;
+  @apply .italic;
 }
+
 h1{
-  font-size: 47.78px;
-  font-weight: 900;
-  line-height: 3rem;
-  margin: 0 0 1.5rem 0;
+  @apply .text-5xl .leading-none .font-bold
+  .mb-12 ;
 }
 h2{
-  font-size: 38px;
-  font-weight: bold;
-  line-height: 3rem;
-  margin: 0 0 1.5rem 0;
+  @apply .text-4xl .leading-none .font-bold
+  .mb-6 ;
 }
 h3{
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 2.25rem;
-  margin: 0 0 1.5rem 0;
+  @apply .text-3xl .leading-tight .font-bold
+  .mb-6 ;
 }
 h4{
-  font-size: 27.65px;
-  font-weight: 700;
-  line-height: 2.25rem;
-  margin: 0 0 1.5rem 0;
+  @apply .text-2xl .leading-normal .font-medium;
 }
 h5{
-  font-size: 23.04px;
-  font-weight: 700;
-  line-height: 1.5rem;
-  margin: 0 0 1.5rem 0;
+    @apply .text-2xl .leading-normal .font-light
+    .mb-12;
 }
 h6{
-  font-size: 19.2px;
-  font-weight: 700;
-  line-height: 1.5rem;
-  margin: 0 0 1.5rem 0;
+  @apply .text-lg .leading-normal .font-normal;
 }
 p{
-  max-width: 45rem;
-  margin: 0 0 1.5rem 0;
+  @apply .text-base .leading-normal .font-normal .mb-6;
+}
+aside{
+  @apply .text-base .leading-normal .font-normal .mb-12;
 }
 
 ol{
   margin: 0 0 1.5rem 0;
 }
 ul{
-  list-style: none;
-  margin: 0 0 1.5rem 0;
+  @apply .mb-6 .list-reset;
 }
 code{
   font-family: monospace;
@@ -70,12 +146,10 @@ pre{
   margin: 0 0 1.5rem 0;
 }
 form{
-  margin: 0 0 1.5rem 0;
+  @apply .max-w-md .p-6;
 }
 form>input{
-  border: solid 1px grey;
-  padding: 1rem .75rem;
-  margin: 0 0 1.5rem 0;
+  @apply .mb-6 .border-b .p-1 .border-grey;
 }
 form>textarea{
   border: solid 1px grey;
@@ -83,9 +157,8 @@ form>textarea{
   margin: 0 0 1.5rem 0;
 }
 form>button{
-  border: solid 1px grey;
-  padding: .5rem 2rem;
-  color: black;
+  @apply .mb-6 .text-center .pb-1 .px-4 .bg-grey .text-white;
+  padding-top: .3rem;
 }
 form>button:hover{
   /* border: solid 1px #b8c2cc; */
@@ -99,7 +172,7 @@ th{
   font-weight: 300;
 }
 a{
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 400;
   color: #03359A;
 }
@@ -112,4 +185,11 @@ blockquote{
   padding-left: 1rem;
   border-left: dotted 1px black;
   font-style: italic;
+}
+
+figure{
+  @apply .my-6;
+}
+figcaption{
+  @apply .mb-6 .text-center;
 }
