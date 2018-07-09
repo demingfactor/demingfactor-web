@@ -230,7 +230,7 @@ article{
   width: 410px;
 }
 .img{
-  @apply .h-96 w-full .bg-cover .bg-center .bg-no-repeat;
+  @apply .min-h-96 w-full .bg-cover .bg-center .bg-no-repeat;
   background-image: url("https://placeimg.com/858/528/any");
 }
 @media (min-width: 368px) {
