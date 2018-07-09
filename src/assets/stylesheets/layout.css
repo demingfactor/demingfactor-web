@@ -1,1 +1,128 @@
 /* layout.css - layout code only  */
+.container{
+  max-width:1440px;
+  margin: auto;
+}
+@supports (display: grid) {
+  @media (min-width: 670px) {
+    article, .grid {
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: repeat(1.5rem, 1fr);
+      grid-auto-flow: column dense;
+    }
+    .logo{
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 11;
+      margin:0;
+    }
+    hgroup{
+      grid-column-start: 2;
+      grid-column-end: 8;
+      padding: 0;
+    }
+
+      nav{
+        grid-column-start: 2;
+        grid-column-end: 8;
+        padding: 0;
+
+      }
+
+    .pitch{
+      grid-column-start: 2;
+      grid-column-end: 10;
+      padding: 0;
+
+    }
+
+
+    article>.img {
+      grid-column-start: 2;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 21;
+    }
+    article.alternate>.img {
+      grid-column-start: 1;
+      grid-column-end: 12;
+      grid-row-start: 3;
+      grid-row-end: 21;
+    }
+
+    article>section {
+      grid-column-start: 2;
+      grid-column-end: 10;
+      grid-row-start: 21;
+      padding: 0;
+    }
+    article.alternate>section {
+      grid-column-start: 4;
+      grid-column-end: 12;
+    }
+
+  }
+  @media (min-width: 870px) {
+    article, .grid {
+        grid-auto-flow: row dense;
+    }
+    hgroup{
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 15;
+      padding: 0;
+    }
+    .logo{
+      grid-column-start: 6;
+      grid-column-end: 12;
+      grid-row-start: 3;
+      grid-row-end: 15;
+    }
+      nav{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 15;
+        grid-row-end: 32;
+        padding: 0;
+      }
+
+    .pitch{
+      grid-column-start: 6;
+      grid-column-end: 12;
+      grid-row-start: 15;
+      grid-row-end: 32;
+    }
+
+    article>.img {
+      grid-column-start: 7;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 22;
+    }
+    article.alternate>.img {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 22;
+    }
+
+    article>section {
+      grid-column-start: 2;
+      grid-column-end: 7;
+      grid-row-start: 3;
+      padding: 0;
+    }
+    article.alternate>section {
+      grid-column-start: 6;
+      grid-column-end: 12;
+      grid-row-start: 3;
+      padding: 0;
+    }
+
+
+  }
+}
