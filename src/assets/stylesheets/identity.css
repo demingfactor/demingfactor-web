@@ -75,7 +75,7 @@ body{
 }
 
 header{
-  @apply .py-6;
+  @apply .py-12;
 }
 
 main{
@@ -89,9 +89,21 @@ footer{
 nav{
   @apply .px-6 .text-2xl;
 }
+nav>ul>li{
+@apply .font-normal;
+}
 
 section, hgroup{
-  @apply .max-w-md .px-6 .py-6;
+  @apply .px-6 .py-6;
+}
+strong{
+  @apply .text-grey-darker;
+}
+header>hgroup{
+  @apply .pb-12;
+}
+img{
+  @apply .h-full;
 }
 
 strong{
@@ -99,16 +111,16 @@ strong{
 }
 
 em{
-  @apply .italic;
+  @apply .font-light .italic;
 }
 
 h1{
-  @apply .text-5xl .leading-none .font-bold
-  .pb-12 ;
+  @apply .text-4xl .leading-none .font-bold
+  .pb-3 ;
 }
 h2{
   @apply .text-4xl .leading-none .font-bold
-  .pt-6 .pb-3 ;
+  .pt-3 .pb-3 ;
 }
 h3{
   @apply .text-3xl .leading-tight .font-bold
@@ -119,16 +131,16 @@ h4{
 }
 h5{
     @apply .text-2xl .leading-normal .font-light
-    .pb-12;
+    .pb-9;
 }
 h6{
-  @apply .text-lg .leading-normal .font-normal;
+  @apply .text-xs .leading-normal .font-normal;
 }
 p{
   @apply .text-base .leading-normal .font-normal .pt-3 .pb-3;
 }
 aside{
-  @apply .text-base .leading-normal .font-normal .pb-12;
+  @apply .text-base .leading-normal .font-normal .mb-12 .pl-4 .pt-6 .pb-6 .border-l-3 ;
 }
 
 ol{
@@ -138,10 +150,10 @@ ul{
   @apply .pb-6 .list-reset;
 }
 li{
-  @apply .pb-3;
+  @apply font-bold;
 }
 li:last-child{
-  @apply pb-0
+  @apply pb-0;
 }
 code{
   font-family: monospace;
@@ -198,4 +210,49 @@ figure{
 }
 figcaption{
   @apply .pb-6 .text-center;
+}
+
+
+
+article{
+  /* display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  background-color: lightcoral; */
+}
+
+.text{
+  color: navy;
+  padding: 0 80px;
+}
+.copy{
+  width: 410px;
+}
+.img{
+  @apply .h-96 w-full .bg-cover .bg-center .bg-no-repeat;
+  background-image: url("https://placeimg.com/858/528/any");
+}
+@media (min-width: 368px) {
+  h1{
+    @apply .text-4xl;
+  }
+}
+@media (min-width: 450px) {
+  h1{
+    font-size: 3.875rem;
+    line-height: 1.161290323;
+  }
+}
+@media (min-width: 670px) {
+
+
+  nav>ul>li{
+    font-size: 1.875rem;
+  }
+  .img{
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
