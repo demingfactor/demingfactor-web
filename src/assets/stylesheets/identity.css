@@ -1,6 +1,5 @@
 /* Identity.css - Native html elements only, no classes or ids */
 
-
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -12,8 +11,8 @@
  *
  * @import "tailwindcss/preflight";
  */
-@tailwind preflight;
 
+@tailwind preflight;
 /**
  * This injects any component classes registered by plugins.
  *
@@ -21,8 +20,8 @@
  *
  * @import "tailwindcss/components";
  */
-@tailwind components;
 
+@tailwind components;
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
@@ -47,8 +46,8 @@
  *
  * @import "tailwindcss/utilities";
  */
-@tailwind utilities;
 
+@tailwind utilities;
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.
@@ -64,139 +63,159 @@
  * @import "utilities/skew-transforms";
  */
 
-html{
-  font-size:  16px;
+html {
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: EuclidFlex;
   line-height: 1.5;
 }
 
-header{
+header {
   @apply .py-12;
 }
 
-main{
+main {
   @apply .pb-6;
 }
 
-footer{
+footer {
   @apply .py-6;
 }
 
-nav{
+nav {
   @apply .px-6 .text-2xl;
 }
-nav>ul>li{
-@apply .font-normal;
+
+nav>ul>li {
+  @apply .font-normal;
 }
 
-section, hgroup{
+section, hgroup {
   @apply .px-6 .py-6;
 }
-strong{
+
+strong {
   @apply .text-grey-darker;
 }
-header>hgroup{
+
+header>hgroup {
   @apply .pb-12;
 }
-img{
+
+img {
   @apply .h-full;
 }
 
-strong{
+strong {
   @apply .font-bold;
 }
 
-em{
+em {
   @apply .font-light .italic;
 }
 
-h1{
-  @apply .text-4xl .leading-none .font-bold
-  .pb-3 ;
-}
-h2{
-  @apply .text-4xl .leading-none .font-bold
-  .pt-3 .pb-3 ;
-}
-h3{
-  @apply .text-3xl .leading-tight .font-bold
-  .pb-6 ;
-}
-h4{
-  @apply .text-2xl .leading-normal .font-medium;
-}
-h5{
-    @apply .text-2xl .leading-normal .font-light
-    .pb-9;
-}
-h6{
-  @apply .text-xs .leading-normal .font-normal;
-}
-p{
-  @apply .text-base .leading-normal .font-normal .pt-3 .pb-3;
-}
-aside{
-  @apply .text-base .leading-normal .font-normal .mb-12 .pl-4 .pt-6 .pb-6 .border-l-3 ;
+h1 {
+  @apply .text-4xl .leading-none .font-bold .pb-3;
 }
 
-ol{
+h2 {
+  @apply .text-4xl .leading-none .font-bold .pt-3 .pb-3;
+}
+
+h3 {
+  @apply .text-3xl .leading-tight .font-bold .pb-6;
+}
+
+h4 {
+  @apply .text-2xl .leading-normal .font-medium;
+}
+
+h5 {
+  @apply .text-2xl .leading-normal .font-light .pb-9;
+}
+
+h6 {
+  @apply .text-xs .leading-normal .font-normal;
+}
+
+p {
+  @apply .text-base .leading-normal .font-normal .pt-3 .pb-3;
+}
+
+aside {
+  @apply .text-base .leading-normal .font-normal .mb-12 .pl-4 .pt-6 .pb-6 .border-l-3;
+}
+
+ol {
   margin: 0 0 1.5rem 0;
 }
-ul{
+
+ul {
   @apply .pb-6 .list-reset;
 }
-li{
+
+li {
   @apply font-bold;
 }
-li:last-child{
+
+li:last-child {
   @apply pb-0;
 }
-code{
+
+code {
   font-family: monospace;
   font-size: 14px;
   margin: 0 0 1.5rem 0;
 }
-pre{
+
+pre {
   margin: 0 0 1.5rem 0;
 }
-form{
+
+form {
   @apply .max-w-md .p-6;
 }
-form>input{
+
+form>input {
   @apply .mb-6 .border-b .p-1 .border-grey;
+  width: calc(100% - 4.5rem);
 }
-form>textarea{
+
+form>textarea {
   border: solid 1px grey;
   padding: 1rem .75rem;
   margin: 0 0 1.5rem 0;
 }
-form>button{
+
+form>button {
   @apply .mb-6 .text-center .pb-1 .px-4 .bg-grey .text-white;
   padding-top: .3rem;
 }
-form>button:hover{
+
+form>button:hover {
   /* border: solid 1px #b8c2cc; */
   color: white;
   background-color: #b8c2cc;
 }
-table{
+
+table {
   margin: 0 0 1.5rem 0;
 }
-th{
+
+th {
   font-weight: 300;
 }
-a{
+
+a {
   text-decoration: underline;
   font-weight: 400;
   color: #03359A;
 }
 
-
-blockquote{
+blockquote {
   font-size: 23.04px;
   font-weight: 300;
   line-height: 3rem;
@@ -205,16 +224,15 @@ blockquote{
   font-style: italic;
 }
 
-figure{
+figure {
   @apply .pt-3 .pb-6;
 }
-figcaption{
+
+figcaption {
   @apply .pb-6 .text-center;
 }
 
-
-
-article{
+article {
   /* display: flex;
   align-items: center;
   width: 100%;
@@ -222,35 +240,45 @@ article{
   background-color: lightcoral; */
 }
 
-.text{
+.text {
   color: navy;
   padding: 0 80px;
 }
-.copy{
+
+.copy {
   width: 410px;
 }
-.img{
-  @apply .h-96 w-full .bg-cover .bg-center .bg-no-repeat;
+
+.img {
+  @apply .min-h-96 w-full .bg-cover .bg-center .bg-no-repeat;
   background-image: url("https://placeimg.com/858/528/any");
 }
+
 @media (min-width: 368px) {
-  h1{
+  h1 {
     @apply .text-4xl;
   }
 }
+
 @media (min-width: 450px) {
-  h1{
+  h1 {
     font-size: 3.875rem;
     line-height: 1.161290323;
   }
 }
+
+@media (min-width: 550px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1.161290323;
+  }
+}
+
 @media (min-width: 670px) {
-
-
-  nav>ul>li{
+  nav>ul>li {
     font-size: 1.875rem;
   }
-  .img{
+  .img {
     background-size: auto;
     background-position: center center;
     background-repeat: no-repeat;
