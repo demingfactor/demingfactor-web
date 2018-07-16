@@ -91,34 +91,35 @@
       padding-left: 0;
       padding-right: 0;
     }
-    footer.grid.alternate>section {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      grid-column: 12fr;
-      grid-row-start: 1;
-      grid-row-end: 4;
+    footer>section {
       /* background-color: lime; */
       display: grid;
       grid-template-columns: repeat(12, 1fr);
+      padding: 0;
     }
     footer section hgroup {
-      grid-column-start: 1;
-      grid-column-end: 6;
+      grid-column-start: 2;
+      grid-column-end: 8;
       /* background-color: lime; */
       grid-row-start: 1;
+      grid-row-end: 4;
     }
     footer section div {
-      grid-column-start: 6;
-      grid-column-end: 9;
+      grid-column-start: 2;
+      grid-column-end: 7;
       /* background-color: orange; */
-      grid-row-start: 1;
-      grid-row-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 6;
+    }
+    footer>section>div>p {
+      padding: 0;
     }
     footer section address {
-      grid-column-start: 10;
-      grid-column-end: 13;
+      grid-column-start: 7;
+      grid-column-end: 12;
       /* background-color: pink; */
-      grid-row-start: 1;
+      grid-row-start: 4;
+      grid-row-end: 6;
     }
   }
   @media (min-width: 965px) {
@@ -220,15 +221,31 @@
       padding-left: 0;
       padding-right: 0;
     }
-    footer.grid.alternate>section {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      grid-column: 12fr;
-      grid-row-start: 1;
-      grid-row-end: 4;
+    footer>section {
       /* background-color: lime; */
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(20, 1fr);
+    }
+    footer section hgroup {
+      grid-column-start: 2;
+      grid-column-end: 7;
+      /* background-color: lime; */
+      grid-row-start: 1;
+      grid-row-end: 8;
+    }
+    footer section div {
+      grid-column-start: 8;
+      grid-column-end: 13;
+      /* background-color: orange; */
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    footer section address {
+      grid-column-start: 13;
+      grid-column-end: 20;
+      /* background-color: pink; */
+      grid-row-start: 2;
+      grid-row-end: 4;
     }
   }
   @media (min-width: 1400px) {
