@@ -500,6 +500,7 @@ module.exports = {
 
   height: {
     'auto': 'auto',
+    '21px': '21px',
     'px': '1px',
     '1': '0.25rem',
     '2': '0.5rem',

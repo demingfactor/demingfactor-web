@@ -1,22 +1,17 @@
- /* .brazo{
-  @apply .bg-cover .bg-center .bg-no-repeat;
-  background-image: url("https://placeimg.com/858/528/any");
-}
+ .brazo {
+   background-image: url("https://placeimg.com/858/528/any");
+ }
 
-.cantina-rotino{
-  @apply .bg-cover .bg-center .bg-no-repeat;
-  background-image: url("https://placeimg.com/858/528/any");
-}
+ .cantina-rotino {
+   background-image: url("https://placeimg.com/858/528/any");
+ }
 
-.mitimes{
-  @apply .bg-cover .bg-center .bg-no-repeat;
-  background-image: url("https://placeimg.com/858/528/any");
-}
+ .mitimes {
+   background-image: url("https://placeimg.com/858/528/any");
+ }
 
-.my-money-zen{
-  @apply .bg-cover .bg-center .bg-no-repeat;
-  background-image: url("https://placeimg.com/858/528/any");
-}
-.logo{
-  @apply .mx-6;
-} */
+ .my-money-zen {
+   background-image: url("https://placeimg.com/858/528/any");
+ }
+
+ .logo {}
