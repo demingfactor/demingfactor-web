@@ -1,3 +1,92 @@
+.brazo {
+  background-image: url("https://placeimg.com/858/528/any");
+}
+
+.cantina-rotino {
+  background-image: url("https://placeimg.com/858/528/any");
+}
+
+.mitimes {
+  background-image: url("https://placeimg.com/858/528/any");
+}
+
+.my-money-zen {
+  background-image: url("https://placeimg.com/858/528/any");
+}
+
+.logo {
+}
+/* font.css - Custom @font-face declarations only */
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 600;
+  src: url(./assets/fonts/EuclidFlex-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 600;
+  src: url(./assets/fonts/EuclidFlex-BoldItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./assets/fonts/EuclidFlex-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 300;
+  src: url(./assets/fonts/EuclidFlex-LightItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./assets/fonts/EuclidFlex-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 500;
+  src: url(./assets/fonts/EuclidFlex-MediumItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/EuclidFlex-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 400;
+  src: url(./assets/fonts/EuclidFlex-RegularItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 200;
+  src: url(./assets/fonts/EuclidFlex-Ultralight.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 200;
+  src: url(./assets/fonts/EuclidFlex-UltralightItalic.otf) format("opentype");
+}
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -21303,77 +21392,6 @@ button,
   .xl\:z-auto {
     z-index: auto;
   }
-}
-/* font.css - Custom @font-face declarations only */
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 600;
-  src: url(./assets/fonts/EuclidFlex-Bold.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 600;
-  src: url(./assets/fonts/EuclidFlex-BoldItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 300;
-  src: url(./assets/fonts/EuclidFlex-Light.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 300;
-  src: url(./assets/fonts/EuclidFlex-LightItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 500;
-  src: url(./assets/fonts/EuclidFlex-Medium.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 500;
-  src: url(./assets/fonts/EuclidFlex-MediumItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 400;
-  src: url(./assets/fonts/EuclidFlex-Regular.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 400;
-  src: url(./assets/fonts/EuclidFlex-RegularItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 200;
-  src: url(./assets/fonts/EuclidFlex-Ultralight.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 200;
-  src: url(./assets/fonts/EuclidFlex-UltralightItalic.otf) format("opentype");
 }
 /* Faster page loads by late loading youtube only on click */
 
@@ -43430,23 +43448,5 @@ article {
   }
 }
 /* Animations.css - keyframe code only  */
-.brazo {
-  background-image: url("https://placeimg.com/858/528/any");
-}
 
-.cantina-rotino {
-  background-image: url("https://placeimg.com/858/528/any");
-}
-
-.mitimes {
-  background-image: url("https://placeimg.com/858/528/any");
-}
-
-.my-money-zen {
-  background-image: url("https://placeimg.com/858/528/any");
-}
-
-.logo {
-}
-
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=main.8ea37b85.css.map*/
