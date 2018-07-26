@@ -95,10 +95,6 @@ section, hgroup {
   @apply .px-6 .py-6;
 }
 
-strong {
-  @apply .text-grey-darker;
-}
-
 header>hgroup {
   @apply .pb-12;
 }
@@ -108,7 +104,7 @@ img {
 }
 
 strong {
-  @apply .font-bold;
+  @apply .font-bold .text-df-pink-lighter;
 }
 
 em {
@@ -144,7 +140,7 @@ p {
 }
 
 aside {
-  @apply .text-sm .leading-normal .font-normal .mb-12 .pl-4 .pt-1 .pb-0 .border-l-3 border-grey-darkest;
+  @apply .text-sm .leading-normal .font-normal .mb-12 .pl-4 .pt-1 .pb-0 .border-l-3 border-df-pink;
 }
 
 ol {
