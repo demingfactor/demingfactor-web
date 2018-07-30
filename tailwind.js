@@ -46,6 +46,15 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
+  'df-purple': '#3626A7',
+  'df-purple-dark': '#211761',
+  'df-pink-lighter': '#F8DEDD',
+  'df-pink-light': '#F9C6C4',
+  'df-pink': '#F84086',
+  'df-green-light': '#B2FFF8',
+  'df-yellow-light': '#FBFAEC',
+
+
   'black': '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
@@ -547,6 +556,7 @@ module.exports = {
   minWidth: {
     '0': '0',
     '32': '8rem',
+    'xxs': '17rem',
     'xs': '23rem',
     'full': '100%',
   },
