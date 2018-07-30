@@ -5,12 +5,16 @@
   margin: auto;
 }
 
-.award {
-  max-width: 10rem;
+.awards {
+  padding: 3rem 1.5rem 3rem;
 }
 
 @supports (display: grid) {
   @media (min-width: 670px) {
+    header.grid>div {
+      grid-row-start: 1;
+      grid-row-end: 19;
+    }
     .grid {
       display: grid;
       grid-gap: 1.5rem;
@@ -46,21 +50,6 @@
       grid-row-end: 26;
       padding: 0;
     }
-    .award.grid>.title {
-      grid-row-start: 4;
-      grid-column-start: 2;
-      grid-column-end: 12;
-    }
-    .award.grid>section {
-      grid-row-start: 5;
-      grid-column-start: 2;
-      grid-column-end: 12;
-      display: grid;
-      column-gap: 1.5rem;
-      row-gap: 1.5rem;
-      grid-row-start: 5;
-      grid-row-end: 10;
-    }
     .grid>form {
       grid-column-start: 1;
       grid-column-end: 8;
@@ -70,13 +59,86 @@
       padding-right: 0;
     }
     /* ====================================================================== */
+    /* ============================ Awards grid ============================= */
+    /* ====================================================================== */
+    .awards {
+      padding: 1.5rem 0 0;
+    }
+    .awards.grid>div, .form.grid>div {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 8;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-column-gap: 3rem;
+    }
+    .awards.grid>div>.title {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .awards.grid>div>.award-1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+    }
+    .awards.grid>div>.award-2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+      padding: 0;
+    }
+    .awards.grid>div>.award-3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+      padding: 0;
+    }
+    .awards.grid>div>.award-4 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+      padding: 0;
+    }
+    /* .awards.grid>div {
+      background: aqua;
+    } */
+    /* ====================================================================== */
+    /* ============================ form grid ============================= */
+    /* ====================================================================== */
+    .form.grid {
+      padding: 0;
+    }
+    .form.grid>div {
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+    .form.grid>div>form {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 6;
+    }
+    /*======================================================================= */
     /* ============================ Footer grid ============================= */
     /* ====================================================================== */
     footer.grid>div {
       grid-column-start: 2;
       grid-column-end: 12;
       grid-row-start: 1;
-      grid-row-end: 5;
+      grid-row-end: 6;
       padding: 0;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -104,6 +166,9 @@
       grid-row-start: 5;
       grid-row-end: 8;
     }
+    footer {
+      padding: 0;
+    }
   }
   @media (min-width: 965px) {
     .grid {
@@ -115,10 +180,12 @@
     /* ====================================================================== */
     /* ============================ Header grid ============================= */
     /* ====================================================================== */
-    header.grid, footer.grid {}
+    header.grid, footer.grid, .awards.grid {}
     header.grid>div {
       grid-column-start: 2;
       grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 17;
       padding: 0;
       display: grid;
       grid-template-columns: repeat(10, 1fr);
@@ -147,7 +214,7 @@
     }
     .pitch {
       grid-column-start: 6;
-      grid-column-end: 10;
+      grid-column-end: 11;
       grid-row-start: 22;
       grid-row-end: 28;
       padding: 0px;
@@ -196,57 +263,64 @@
       grid-row-end: 15;
       padding: 0 0 0;
     }
-    .award.grid>.title {
-      grid-row-start: 4;
+    /* ====================================================================== */
+    /* ============================ Awards grid ============================= */
+    /* ====================================================================== */
+    .awards.grid>div, .form.grid>div {
       grid-column-start: 2;
       grid-column-end: 12;
-    }
-    .award.grid>section {
-      grid-row-start: 3;
-      grid-column-start: 2;
-      grid-column-end: 12;
+      padding: 0;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      column-gap: 1.5rem;
-      row-gap: 1.5rem;
-      grid-row-start: 5;
-      grid-row-end: 10;
     }
-    .award.grid>section>div {
-      /* background: lime; */
+    .awards.grid>div>.title {
+      grid-column-start: 1;
+      grid-column-end: 5;
     }
-    .grid>form {
+    .awards.grid>div>.award-1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .awards.grid>div>.award-2 {
       grid-column-start: 2;
-      grid-column-end: 4;
-      padding-left: 0;
-      padding-right: 0;
+      grid-column-end: 3;
     }
+    .awards.grid>div>.award-3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    .awards.grid>div>.award-4 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+    /* .awards.grid>div {
+      background: tomato;
+    } */
     /* ====================================================================== */
     /* ============================ Footer grid ============================= */
     /* ====================================================================== */
     footer.grid>div {
-      grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-end: 5;
     }
     footer>div>hgroup {
       grid-column-start: 1;
       grid-column-end: 5;
       grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-end: 4;
       padding: 0;
     }
     footer>div>.contact {
       grid-column-start: 5;
       grid-column-end: 8;
-      grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4;
       padding: 0;
     }
     footer>div>address {
       grid-column-start: 9;
       grid-column-end: 13;
-      grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4;
     }
   }
   @media (min-width: 1400px) {
@@ -287,13 +361,13 @@
     }
     .logo {
       grid-column-start: 5;
-      grid-column-end: 12;
+      grid-column-end: 13;
       grid-row-start: 3;
       grid-row-end: 20;
     }
     .pitch {
       grid-column-start: 5;
-      grid-column-end: 9;
+      grid-column-end: 11;
       grid-row-start: 22;
       grid-row-end: 28;
       padding: 0px;
@@ -334,29 +408,60 @@
       grid-row-end: 15;
       padding: 0 0 0;
     }
-    .award.grid>.title {
-      grid-row-start: 4;
-      grid-column-start: 2;
-      grid-column-end: 12;
+    /* ====================================================================== */
+    /* ============================ Awards grid ============================= */
+    /* ====================================================================== */
+    article.award.grid, .form.grid {
+      grid-template-columns: 1fr 82.25rem 1fr;
     }
-    .award.grid>section {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 1.5rem;
-      row-gap: 1.5rem;
-      grid-row-start: 5;
-      grid-row-end: 10;
-    }
-    .award.grid>section>div {
-      /* background: lime; */
-    }
-    .grid>form {
+    .awards.grid>div, .form.grid>div {
       grid-column-start: 2;
       grid-column-end: 3;
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .awards.grid>div>.title {
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .awards.grid>div>.award-1 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .awards.grid>div>.award-2 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      padding: 0;
+    }
+    .awards.grid>div>.award-3 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      padding: 0;
+    }
+    .awards.grid>div>.award-4 {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      padding: 0;
+    }
+    /* .awards.grid>div {
+      background: lime;
+    } */
+    /* ====================================================================== */
+    /* ============================ Form grid ============================= */
+    /* ====================================================================== */
+    .form.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 6;
       padding-left: 0;
       padding-right: 0;
+    }
+    .form.grid>div>form {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+    .awards.grid {
+      grid-template-columns: 1fr 82.25rem 1fr;
     }
     /* ====================================================================== */
     /* ============================ Footer grid ============================= */
