@@ -46,6 +46,15 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
+  'df-purple': '#3626A7',
+  'df-purple-dark': '#211761',
+  'df-pink-lighter': '#F8DEDD',
+  'df-pink-light': '#F9C6C4',
+  'df-pink': '#F84086',
+  'df-green-light': '#B2FFF8',
+  'df-yellow-light': '#FBFAEC',
+
+
   'black': '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
@@ -254,7 +263,7 @@ module.exports = {
     'sm': '.875rem', // 14px
     'base': '1rem', // 16px
     'lg': '1.125rem', // 18px
-    'xl': '1.25rem', // 20px
+    'xl': '1.375rem', // 22px
     '2xl': '1.5rem', // 24px
     '3xl': '1.875rem', // 30px
     '4xl': '2.25rem', // 36px
@@ -377,6 +386,7 @@ module.exports = {
     default: '1px',
     '0': '0',
     '2': '2px',
+    '3': '3px',
     '4': '4px',
     '8': '8px',
   },
@@ -465,6 +475,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '108': '27rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -498,6 +509,7 @@ module.exports = {
 
   height: {
     'auto': 'auto',
+    '21px': '21px',
     'px': '1px',
     '1': '0.25rem',
     '2': '0.5rem',
@@ -508,10 +520,18 @@ module.exports = {
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
+    '19': '4.75rem',
+    '20': '5rem',
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '76': '19rem',
+    '82': '20.5rem',
+    '90': '22.5rem',
+    '96': '24rem',
+    '108': '27rem',
+    '132': '33rem',
     '216': '54rem',
     '288': '72rem',
     'full': '100%',
@@ -535,6 +555,9 @@ module.exports = {
 
   minWidth: {
     '0': '0',
+    '32': '8rem',
+    'xxs': '17rem',
+    'xs': '23rem',
     'full': '100%',
   },
 
@@ -560,6 +583,7 @@ module.exports = {
     '36': '9rem',
     '44': '11rem',
     '72': '18rem',
+    '96': '24rem',
     '216': '54rem',
     '288': '72rem',
     'full': '100%',
@@ -583,13 +607,16 @@ module.exports = {
   */
 
   maxWidth: {
-    'xs': '20rem',
-    'sm': '30rem',
-    'md': '40rem',
+    'xxxs': '10rem',
+    'xxs': '21rem',
+    'xs': '25rem',
+    'sm': '27rem',
+    'md': '33rem',
+    // 'md': '40rem',
     'lg': '50rem',
     'xl': '60rem',
     '2xl': '70rem',
-    '3xl': '80rem',
+    '3xl': '86rem',
     '4xl': '90rem',
     '5xl': '100rem',
     'full': '100%',
@@ -611,6 +638,7 @@ module.exports = {
   */
 
   maxHeight: {
+    '132': '33rem',
     'full': '100%',
     'screen': '100vh',
   },
@@ -640,6 +668,9 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '9': '2.125rem',
+    '12': '3rem',
+    '18': '4.5rem',
   },
 
 
@@ -668,6 +699,8 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '12': '3rem',
+    '18': '4.5rem',
   },
 
 
