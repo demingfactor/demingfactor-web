@@ -100,7 +100,7 @@ header>hgroup {
 }
 
 img {
-  @apply .h-full;
+  @apply .h-full w-auto;
 }
 
 strong {
@@ -245,6 +245,9 @@ article {
 
 .img {
   @apply .min-h-96 w-full .bg-cover .bg-center .bg-no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 368px) {
@@ -271,10 +274,5 @@ article {
   nav>ul>li {
     font-size: 1.875rem;
   }
-  .img {
-    background-image: url("https://placeimg.com/858/528/any");
-    background-size: auto;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
+  .img {}
 }
