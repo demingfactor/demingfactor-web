@@ -14,4 +14,20 @@
    background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532921572/Deming%20Factor/my-money-zen-budgeting-made-easy.png");
  }
 
+ .obj-cover {
+   object-fit: cover;
+ }
+
+ .obj-contain {
+   object-fit: contain;
+ }
+
+ /* .obj-contain {
+   object-fit: contain;
+ } */
+
+ .pos-bottom {
+   object-position: bottom;
+ }
+
  .logo {}

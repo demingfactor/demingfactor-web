@@ -184,15 +184,20 @@ form>textarea {
   margin: 0 0 1.5rem 0;
 }
 
-form>button {
-  @apply .mb-6 .text-center .pb-1 .px-4 .bg-grey .text-white;
+form>button, .btn {
+  @apply .mb-6 .text-center .pb-1 .px-4 .bg-df-pink .opacity-75 .text-white .cursor-pointer;
   padding-top: .3rem;
 }
 
-form>button:hover {
+form>button:hover, .btn:hover {
   /* border: solid 1px #b8c2cc; */
+  @apply .opacity-100;
   color: white;
-  background-color: #b8c2cc;
+}
+
+form>button:focus, .btn:focus {
+  /* border: solid 1px #b8c2cc; */
+  @apply .opacity-75;
 }
 
 table {
