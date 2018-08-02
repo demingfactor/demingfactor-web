@@ -6,33 +6,33 @@ const webpack = require('webpack')
 // Use Loaders to help webpack understand more filetypes.
 //////////////////////////////////////////////////////////////////////
 
-  // Enable Webpack to read common non-JS files
-  const FileLoader = require("file-loader");
+// Enable Webpack to read common non-JS files
+const FileLoader = require("file-loader");
 
-  // Enable Webpack to read common non-JS files and make small file into embedded data
-  const UrlLoader = require("url-loader");
+// Enable Webpack to read common non-JS files and make small file into embedded data
+const UrlLoader = require("url-loader");
 
 //////////////////////////////////////////////////////////////////////
 // 2A. ADD PLUGINS THAT DO CONVERSIONS BETWEEN THINGS
 //////////////////////////////////////////////////////////////////////
 
-  // Autogenerates index.js into a index.html with auto script tags
-  const HtmlWebpackPlugin = require('html-webpack-plugin');
+// Autogenerates index.js into a index.html with auto script tags
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-  // Bundles (CSS) to own CSS file rather than embedded in CSS.
-  const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// Bundles (CSS) to own CSS file rather than embedded in CSS.
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-  const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 //////////////////////////////////////////////////////////////////////
 // 2B. ADD PLUGINS THAT TIDY UP THINGS
 //////////////////////////////////////////////////////////////////////
 
-  // Purges unused CSS (Great for use with a style framework like Tailwind)
-  const PurgecssPlugin = require('purgecss-webpack-plugin');
+// Purges unused CSS (Great for use with a style framework like Tailwind)
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
-  // Wipes docs directory on recompiling, keeping the directory clean.
-  const CleanWebpackPlugin = require('clean-webpack-plugin');
+// Wipes docs directory on recompiling, keeping the directory clean.
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 //----------------------------------------------------------------------//
 
@@ -59,16 +59,17 @@ class TailwindExtractor {
 module.exports = {
   entry: ['./src/index.js'],
   module: {
-    rules: [{
-        test: /\.(png|jp(e*)g|svg)$/,
-        use: [{
-          loader: 'url-loader', // url-loader defaults back to loading with file-loader if size over size limit.
-          options: {
-            limit: 8000, // Convert files < 8kb to base64 strings
-            name: 'assets/images/[hash]-[name].[ext]'
-          }
-        }]
-      },
+    rules: [
+      // {
+      //   test: /\.(png|jp(e*)g|svg)$/,
+      //   use: [{
+      //     loader: 'url-loader', // url-loader defaults back to loading with file-loader if size over size limit.
+      //     options: {
+      //       limit: 8000, // Convert files < 8kb to base64 strings
+      //       name: 'assets/images/[hash]-[name].[ext]'
+      //     }
+      //   }]
+      // },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [{
@@ -97,20 +98,20 @@ module.exports = {
     new CopyWebpackPlugin([{
       context: 'src/assets/stylesheets/',
       from: '*.css',
-      to: path.resolve(__dirname, 'docs/assets/stylesheets/')
+      to: path.resolve(__dirname, 'assets/stylesheets/')
     }, {
       context: 'src/assets/images/',
       from: '*.png',
-      to: path.resolve(__dirname, 'docs/assets/images/')
+      to: path.resolve(__dirname, 'assets/images/')
     }, {
       context: 'src/assets/stylesheets',
       from: '*.svg',
-      to: path.resolve(__dirname, 'docs/assets/stylesheets')
+      to: path.resolve(__dirname, 'assets/images')
     }, {
       context: 'src/assets/stylesheets/fonts',
       from: '*/*',
       test: /\.(woff|woff2|eot|ttf|otf)$/,
-      to: path.resolve(__dirname, 'docs/assets/stylesheets/fonts')
+      to: path.resolve(__dirname, 'assets/stylesheets/fonts')
     }]),
     new HtmlWebpackPlugin({
       inject: true,

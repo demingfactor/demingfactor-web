@@ -526,6 +526,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '72': '18rem',
     '76': '19rem',
     '82': '20.5rem',
     '90': '22.5rem',
@@ -607,6 +608,7 @@ module.exports = {
   */
 
   maxWidth: {
+    '4xs': '9rem',
     'xxxs': '10rem',
     'xxs': '21rem',
     'xs': '25rem',
@@ -638,6 +640,7 @@ module.exports = {
   */
 
   maxHeight: {
+    '12': '3rem',
     '132': '33rem',
     'full': '100%',
     'screen': '100vh',

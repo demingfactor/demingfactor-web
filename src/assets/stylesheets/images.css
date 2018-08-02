@@ -1,0 +1,29 @@
+.df-footer-image{
+  background-image: url("../images/df-footer.svg");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: 1500px 750px;
+  background-position: 55% 60%;
+}
+
+@media (min-width: 368px) {
+
+}
+
+@media (min-width: 450px) {
+
+}
+
+@media (min-width: 550px) {
+
+}
+
+@media (min-width: 670px) {
+
+}
+/* tailwind md */
+@media (min-width: 768px) {
+  .df-footer-image{
+  background-size: 3000px 1500px;
+  }
+}
