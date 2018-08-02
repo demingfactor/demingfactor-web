@@ -1,3 +1,101 @@
+.df-footer-image {
+  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532936977/df-footer.svg");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: 1500px 750px;
+  background-position: 55% 60%;
+}
+
+@media (min-width: 368px) {
+}
+
+@media (min-width: 450px) {
+}
+
+@media (min-width: 550px) {
+}
+
+@media (min-width: 670px) {
+}
+
+/* tailwind md */
+
+@media (min-width: 768px) {
+  .df-footer-image {
+    background-size: 3000px 1500px;
+  }
+}
+/* font.css - Custom @font-face declarations only */
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 600;
+  src: url(./assets/fonts/EuclidFlex-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 600;
+  src: url(./assets/fonts/EuclidFlex-BoldItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./assets/fonts/EuclidFlex-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 300;
+  src: url(./assets/fonts/EuclidFlex-LightItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./assets/fonts/EuclidFlex-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 500;
+  src: url(./assets/fonts/EuclidFlex-MediumItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/EuclidFlex-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 400;
+  src: url(./assets/fonts/EuclidFlex-RegularItalic.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: normal;
+  font-weight: 200;
+  src: url(./assets/fonts/EuclidFlex-Ultralight.otf) format("opentype");
+}
+
+@font-face {
+  font-family: EuclidFlex;
+  font-style: italic;
+  font-weight: 200;
+  src: url(./assets/fonts/EuclidFlex-UltralightItalic.otf) format("opentype");
+}
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -22324,104 +22422,6 @@ button,
     z-index: auto;
   }
 }
-/* font.css - Custom @font-face declarations only */
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 600;
-  src: url(./assets/fonts/EuclidFlex-Bold.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 600;
-  src: url(./assets/fonts/EuclidFlex-BoldItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 300;
-  src: url(./assets/fonts/EuclidFlex-Light.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 300;
-  src: url(./assets/fonts/EuclidFlex-LightItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 500;
-  src: url(./assets/fonts/EuclidFlex-Medium.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 500;
-  src: url(./assets/fonts/EuclidFlex-MediumItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 400;
-  src: url(./assets/fonts/EuclidFlex-Regular.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 400;
-  src: url(./assets/fonts/EuclidFlex-RegularItalic.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: normal;
-  font-weight: 200;
-  src: url(./assets/fonts/EuclidFlex-Ultralight.otf) format("opentype");
-}
-
-@font-face {
-  font-family: EuclidFlex;
-  font-style: italic;
-  font-weight: 200;
-  src: url(./assets/fonts/EuclidFlex-UltralightItalic.otf) format("opentype");
-}
-.df-footer-image {
-  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532936977/df-footer.svg");
-  background-color: grey;
-  background-repeat: no-repeat;
-  background-size: 1500px 750px;
-  background-position: 55% 60%;
-}
-
-@media (min-width: 368px) {
-}
-
-@media (min-width: 450px) {
-}
-
-@media (min-width: 550px) {
-}
-
-@media (min-width: 670px) {
-}
-
-/* tailwind md */
-
-@media (min-width: 768px) {
-  .df-footer-image {
-    background-size: 3000px 1500px;
-  }
-}
 /* Faster page loads by late loading youtube only on click */
 
 /* Thanks to Amit Agarwal https://www.labnol.org/internet/light-youtube-embeds/27941/ */
@@ -22480,6 +22480,625 @@ button,
   background: url("") no-repeat;
   cursor: pointer;
 }
+/* layout.css - layout code only  */
+
+.max-w-container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.awards {
+  padding: 3rem 1.5rem 3rem;
+}
+
+.pitch>p {
+  font-size: 1.5rem;
+}
+
+.logo {
+  padding-left: 1.5rem;
+  height: 3rem;
+}
+
+.awards.grid>div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1.5rem;
+  grid-column-gap: 3rem;
+}
+
+.awards.grid>div>.title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.awards.grid>div>.award-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 15;
+  padding: 0;
+}
+
+.awards.grid>div>.award-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 15;
+  padding: 0;
+  padding: 0;
+}
+
+.awards.grid>div>.award-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 15;
+  grid-row-end: 23;
+  padding: 0;
+  padding: 0;
+}
+
+.awards.grid>div>.award-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 15;
+  grid-row-end: 23;
+  padding: 0;
+  padding: 0;
+}
+
+@supports (display: grid) {
+  @media (min-width: 670px) {
+    header.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 19;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-column-gap: 1.5rem;
+    }
+
+    .logo {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 7;
+      padding-left: 0;
+      height: auto;
+    }
+
+    hgroup {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 8;
+      grid-row-end: 16;
+      padding: 0;
+    }
+
+    nav {
+      grid-column-start: 1;
+      grid-column-end: 10;
+      grid-row-start: 18;
+      grid-row-end: 26;
+      padding: 0;
+    }
+
+    .pitch {
+      font-size: 1.25rem;
+      grid-column-start: 1;
+      grid-column-end: 12;
+      grid-row-start: 27;
+      grid-row-end: 33;
+      padding: 0;
+    }/* .pitch>p {
+      padding: 0;
+      font-size: 1.25rem;
+    } */
+
+    .grid {
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-auto-flow: column dense;
+    }
+
+    .grid>.img {
+      grid-column-start: 2;
+      grid-column-end: 13;
+      grid-row-start: 2;
+      grid-row-end: 14;
+      max-height: 33rem;
+    }
+
+    .grid.alternate>.img {
+      grid-column-start: 1;
+      grid-column-end: 12;
+      grid-row-start: 2;
+      grid-row-end: 14;
+      max-height: 33rem;
+    }
+
+    .grid>section {
+      grid-column-start: 2;
+      grid-column-end: 10;
+      grid-row-start: 14;
+      grid-row-end: 26;
+      padding: 0;
+    }
+
+    .grid.alternate>section {
+      grid-column-start: 4;
+      grid-column-end: 12;
+      grid-row-start: 14;
+      grid-row-end: 26;
+      padding: 0;
+    }
+
+    .grid>form {
+      grid-column-start: 1;
+      grid-column-end: 8;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      padding-left: 0;
+      padding-right: 0;
+    }/* ====================================================================== *//* ============================ Awards grid ============================= *//* ====================================================================== */
+
+    .awards {
+      padding: 1.5rem 0 0;
+    }
+
+    .awards.grid>div,
+    .form.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 8;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-column-gap: 3rem;
+    }
+
+    .awards.grid>div>.title {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .awards.grid>div>.award-1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+    }
+
+    .awards.grid>div>.award-2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+      padding: 0;
+    }
+
+    .awards.grid>div>.award-3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+      padding: 0;
+    }
+
+    .awards.grid>div>.award-4 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 10;
+      padding: 0;
+      padding: 0;
+    }/* .awards.grid>div {
+      background: aqua;
+    } *//* ====================================================================== *//* ============================ form grid ============================= *//* ====================================================================== */
+
+    .form.grid {
+      padding: 0;
+    }
+
+    .form.grid>div {
+      grid-row-start: 1;
+      grid-row-end: 6;
+    }
+
+    .form.grid>div>form {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 6;
+    }/*======================================================================= *//* ============================ Footer grid ============================= *//* ====================================================================== */
+
+    footer.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 6;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-column-gap: 3rem;
+      padding: 0;
+    }
+
+    footer>div>hgroup {
+      grid-column-start: 1;
+      grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      padding: 0;
+    }
+
+    footer>div>.contact {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 5;
+      grid-row-end: 8;
+      padding: 0;
+    }
+
+    footer>div>address {
+      grid-column-start: 6;
+      grid-column-end: 13;
+      grid-row-start: 5;
+      grid-row-end: 8;
+    }
+
+    footer {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 965px) {
+    .grid {
+      grid-template-columns: 1fr 25.625rem repeat(10, 1fr);
+      grid-auto-rows: repeat(26rem, 1fr);
+      grid-auto-flow: row;
+      grid-column-gap: 3rem;
+    }/* ====================================================================== *//* ============================ Header grid ============================= *//* ====================================================================== */
+
+    header.grid,
+    footer.grid,
+    .awards.grid {
+    }
+
+    header.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 17;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-column-gap: 1.5rem;
+    }
+
+    hgroup {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 6;
+      grid-row-end: 13;
+      padding: 0;
+    }
+
+    nav {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 22;
+      grid-row-end: 30;
+      padding: 0;
+    }
+
+    .logo {
+      grid-column-start: 6;
+      grid-column-end: 12;
+      grid-row-start: 3;
+      grid-row-end: 20;
+    }
+
+    .pitch {
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 22;
+      grid-row-end: 28;
+      padding: 0;
+    }/* .pitch>p {
+      font-size: 1.5rem;
+    } *//* ====================================================================== *//* ========================= Alternative grid =========================== *//* ====================================================================== */
+
+    .grid.alternate {
+      grid-template-columns: repeat(10, 1fr) 25.625rem 1fr;
+      grid-auto-rows: repeat(26rem, 1fr);
+      grid-auto-flow: row;
+      grid-column-gap: 3rem;
+    }
+
+    article {
+      /* max-height: 40rem; */
+      grid-row-gap: 1.5rem;
+      padding-bottom: calc(3 * 1.5rem);
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid>.img {
+      grid-column-start: 3;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 15;
+      padding: 0;
+    }
+
+    .grid>section {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 15;
+      max-width: 388px;
+      padding: 0;
+    }
+
+    .grid.alternate>.img {
+      grid-column-start: 1;
+      grid-column-end: 11;
+      grid-row-start: 3;
+      grid-row-end: 15;
+      padding: 0;
+    }
+
+    .grid.alternate>section {
+      grid-column-start: 11;
+      grid-column-end: 12;
+      grid-row-start: 3;
+      grid-row-end: 15;
+      padding: 0 0 0;
+    }/* ====================================================================== *//* ============================ Awards grid ============================= *//* ====================================================================== */
+
+    .awards.grid>div,
+    .form.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .awards.grid>div>.title {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .awards.grid>div>.award-1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .awards.grid>div>.award-2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    .awards.grid>div>.award-3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    .awards.grid>div>.award-4 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }/* .awards.grid>div {
+      background: tomato;
+    } *//* ====================================================================== *//* ============================ Footer grid ============================= *//* ====================================================================== */
+
+    footer.grid>div {
+      grid-row-end: 5;
+    }
+
+    footer>div>hgroup {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      padding: 0;
+    }
+
+    footer>div>.contact {
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      padding: 0;
+    }
+
+    footer>div>address {
+      grid-column-start: 9;
+      grid-column-end: 13;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .grid {
+      grid-template-columns: 1fr 25.625rem 53.625rem 1fr;
+      grid-template-rows: 1;
+      grid-auto-rows: repeat(26rem, 1fr);
+      grid-auto-flow: row;
+    }/* ====================================================================== *//* ============================ Header grid ============================= *//* ====================================================================== */
+
+    header.grid {
+      grid-template-columns: 1fr 82.25rem 1fr;
+    }
+
+    header.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-column-gap: 3rem;
+    }
+
+    hgroup {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 11;
+      padding: 0;
+    }
+
+    nav {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 22;
+      grid-row-end: 30;
+      padding: 0;
+    }
+
+    .logo {
+      grid-column-start: 5;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 20;
+    }
+
+    .pitch {
+      grid-column-start: 5;
+      grid-column-end: 11;
+      grid-row-start: 22;
+      grid-row-end: 28;
+      padding: 0;
+    }/* ====================================================================== *//* ========================= Alternative grid =========================== *//* ====================================================================== */
+
+    .grid.alternate {
+      grid-template-columns: 1fr 53.625rem 25.625rem 1fr;
+      grid-auto-rows: repeat(26rem, 1fr);
+      grid-auto-flow: row;
+    }
+
+    article {
+      /* max-height: 40rem; */
+      grid-row-gap: 1.5rem;
+      padding-bottom: calc(3 * 1.5rem);
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid>.img {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      padding: 0;
+    }
+
+    .grid>section {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-end: 15;
+      padding: 0;
+    }
+
+    .grid.alternate>.img {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      padding: 0;
+    }
+
+    .grid.alternate>section {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-end: 15;
+      padding: 0 0 0;
+    }/* ====================================================================== *//* ============================ Awards grid ============================= *//* ====================================================================== */
+
+    article.award.grid,
+    .form.grid {
+      grid-template-columns: 1fr 82.25rem 1fr;
+    }
+
+    .awards.grid>div,
+    .form.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-template-columns: repeat(10, 1fr);
+    }
+
+    .awards.grid>div>.title {
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+
+    .awards.grid>div>.award-1 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .awards.grid>div>.award-2 {
+      grid-column-start: 4;
+      grid-column-end: 6;
+      padding: 0;
+    }
+
+    .awards.grid>div>.award-3 {
+      grid-column-start: 6;
+      grid-column-end: 8;
+      padding: 0;
+    }
+
+    .awards.grid>div>.award-4 {
+      grid-column-start: 8;
+      grid-column-end: 10;
+      padding: 0;
+    }/* .awards.grid>div {
+      background: lime;
+    } *//* ====================================================================== *//* ============================ Form grid ============================= *//* ====================================================================== */
+
+    .form.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 6;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .form.grid>div>form {
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+
+    .awards.grid {
+      grid-template-columns: 1fr 82.25rem 1fr;
+    }/* ====================================================================== *//* ============================ Footer grid ============================= *//* ====================================================================== */
+
+    footer.grid>div {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 1.5rem;
+      grid-column-gap: 3rem;
+    }
+  }/* 858px */
+}
+/* Animations.css - keyframe code only  */
 /* Variables.css - CSS Variables Only */
 /* Identity.css - Native html elements only, no classes or ids */
 
@@ -45098,625 +45717,6 @@ article {
     z-index: auto;
   }
 }
-/* Animations.css - keyframe code only  */
-/* layout.css - layout code only  */
-
-.max-w-container {
-  max-width: 1920px;
-  margin: auto;
-}
-
-.awards {
-  padding: 3rem 1.5rem 3rem;
-}
-
-.pitch>p {
-  font-size: 1.5rem;
-}
-
-.logo {
-  padding-left: 1.5rem;
-  height: 3rem;
-}
-
-.awards.grid>div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1.5rem;
-  grid-column-gap: 3rem;
-}
-
-.awards.grid>div>.title {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.awards.grid>div>.award-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 15;
-  padding: 0;
-}
-
-.awards.grid>div>.award-2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 15;
-  padding: 0;
-  padding: 0;
-}
-
-.awards.grid>div>.award-3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 15;
-  grid-row-end: 23;
-  padding: 0;
-  padding: 0;
-}
-
-.awards.grid>div>.award-4 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 15;
-  grid-row-end: 23;
-  padding: 0;
-  padding: 0;
-}
-
-@supports (display: grid) {
-  @media (min-width: 670px) {
-    header.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      grid-row-start: 1;
-      grid-row-end: 19;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-column-gap: 1.5rem;
-    }
-
-    .logo {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 7;
-      padding-left: 0;
-      height: auto;
-    }
-
-    hgroup {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 8;
-      grid-row-end: 16;
-      padding: 0;
-    }
-
-    nav {
-      grid-column-start: 1;
-      grid-column-end: 10;
-      grid-row-start: 18;
-      grid-row-end: 26;
-      padding: 0;
-    }
-
-    .pitch {
-      font-size: 1.25rem;
-      grid-column-start: 1;
-      grid-column-end: 12;
-      grid-row-start: 27;
-      grid-row-end: 33;
-      padding: 0;
-    }/* .pitch>p {
-      padding: 0;
-      font-size: 1.25rem;
-    } */
-
-    .grid {
-      display: grid;
-      grid-gap: 1.5rem;
-      grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-auto-flow: column dense;
-    }
-
-    .grid>.img {
-      grid-column-start: 2;
-      grid-column-end: 13;
-      grid-row-start: 2;
-      grid-row-end: 14;
-      max-height: 33rem;
-    }
-
-    .grid.alternate>.img {
-      grid-column-start: 1;
-      grid-column-end: 12;
-      grid-row-start: 2;
-      grid-row-end: 14;
-      max-height: 33rem;
-    }
-
-    .grid>section {
-      grid-column-start: 2;
-      grid-column-end: 10;
-      grid-row-start: 14;
-      grid-row-end: 26;
-      padding: 0;
-    }
-
-    .grid.alternate>section {
-      grid-column-start: 4;
-      grid-column-end: 12;
-      grid-row-start: 14;
-      grid-row-end: 26;
-      padding: 0;
-    }
-
-    .grid>form {
-      grid-column-start: 1;
-      grid-column-end: 8;
-      grid-row-start: 1;
-      grid-row-end: 5;
-      padding-left: 0;
-      padding-right: 0;
-    }/* ====================================================================== *//* ============================ Awards grid ============================= *//* ====================================================================== */
-
-    .awards {
-      padding: 1.5rem 0 0;
-    }
-
-    .awards.grid>div,
-    .form.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      grid-row-start: 1;
-      grid-row-end: 8;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-column-gap: 3rem;
-    }
-
-    .awards.grid>div>.title {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 4;
-    }
-
-    .awards.grid>div>.award-1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 5;
-      grid-row-end: 10;
-      padding: 0;
-    }
-
-    .awards.grid>div>.award-2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 5;
-      grid-row-end: 10;
-      padding: 0;
-      padding: 0;
-    }
-
-    .awards.grid>div>.award-3 {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 5;
-      grid-row-end: 10;
-      padding: 0;
-      padding: 0;
-    }
-
-    .awards.grid>div>.award-4 {
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row-start: 5;
-      grid-row-end: 10;
-      padding: 0;
-      padding: 0;
-    }/* .awards.grid>div {
-      background: aqua;
-    } *//* ====================================================================== *//* ============================ form grid ============================= *//* ====================================================================== */
-
-    .form.grid {
-      padding: 0;
-    }
-
-    .form.grid>div {
-      grid-row-start: 1;
-      grid-row-end: 6;
-    }
-
-    .form.grid>div>form {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 6;
-    }/*======================================================================= *//* ============================ Footer grid ============================= *//* ====================================================================== */
-
-    footer.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      grid-row-start: 1;
-      grid-row-end: 6;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-column-gap: 3rem;
-      padding: 0;
-    }
-
-    footer>div>hgroup {
-      grid-column-start: 1;
-      grid-column-end: 12;
-      grid-row-start: 1;
-      grid-row-end: 4;
-      padding: 0;
-    }
-
-    footer>div>.contact {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 5;
-      grid-row-end: 8;
-      padding: 0;
-    }
-
-    footer>div>address {
-      grid-column-start: 6;
-      grid-column-end: 13;
-      grid-row-start: 5;
-      grid-row-end: 8;
-    }
-
-    footer {
-      padding: 0;
-    }
-  }
-
-  @media (min-width: 965px) {
-    .grid {
-      grid-template-columns: 1fr 25.625rem repeat(10, 1fr);
-      grid-auto-rows: repeat(26rem, 1fr);
-      grid-auto-flow: row;
-      grid-column-gap: 3rem;
-    }/* ====================================================================== *//* ============================ Header grid ============================= *//* ====================================================================== */
-
-    header.grid,
-    footer.grid,
-    .awards.grid {
-    }
-
-    header.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      grid-row-start: 1;
-      grid-row-end: 17;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-column-gap: 1.5rem;
-    }
-
-    hgroup {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 6;
-      grid-row-end: 13;
-      padding: 0;
-    }
-
-    nav {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 22;
-      grid-row-end: 30;
-      padding: 0;
-    }
-
-    .logo {
-      grid-column-start: 6;
-      grid-column-end: 12;
-      grid-row-start: 3;
-      grid-row-end: 20;
-    }
-
-    .pitch {
-      grid-column-start: 6;
-      grid-column-end: 11;
-      grid-row-start: 22;
-      grid-row-end: 28;
-      padding: 0;
-    }/* .pitch>p {
-      font-size: 1.5rem;
-    } *//* ====================================================================== *//* ========================= Alternative grid =========================== *//* ====================================================================== */
-
-    .grid.alternate {
-      grid-template-columns: repeat(10, 1fr) 25.625rem 1fr;
-      grid-auto-rows: repeat(26rem, 1fr);
-      grid-auto-flow: row;
-      grid-column-gap: 3rem;
-    }
-
-    article {
-      /* max-height: 40rem; */
-      grid-row-gap: 1.5rem;
-      padding-bottom: calc(3 * 1.5rem);
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .grid>.img {
-      grid-column-start: 3;
-      grid-column-end: 13;
-      grid-row-start: 3;
-      grid-row-end: 15;
-      padding: 0;
-    }
-
-    .grid>section {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 15;
-      max-width: 388px;
-      padding: 0;
-    }
-
-    .grid.alternate>.img {
-      grid-column-start: 1;
-      grid-column-end: 11;
-      grid-row-start: 3;
-      grid-row-end: 15;
-      padding: 0;
-    }
-
-    .grid.alternate>section {
-      grid-column-start: 11;
-      grid-column-end: 12;
-      grid-row-start: 3;
-      grid-row-end: 15;
-      padding: 0 0 0;
-    }/* ====================================================================== *//* ============================ Awards grid ============================= *//* ====================================================================== */
-
-    .awards.grid>div,
-    .form.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 12;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .awards.grid>div>.title {
-      grid-column-start: 1;
-      grid-column-end: 5;
-    }
-
-    .awards.grid>div>.award-1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
-
-    .awards.grid>div>.award-2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-    }
-
-    .awards.grid>div>.award-3 {
-      grid-column-start: 3;
-      grid-column-end: 4;
-    }
-
-    .awards.grid>div>.award-4 {
-      grid-column-start: 4;
-      grid-column-end: 5;
-    }/* .awards.grid>div {
-      background: tomato;
-    } *//* ====================================================================== *//* ============================ Footer grid ============================= *//* ====================================================================== */
-
-    footer.grid>div {
-      grid-row-end: 5;
-    }
-
-    footer>div>hgroup {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 4;
-      padding: 0;
-    }
-
-    footer>div>.contact {
-      grid-column-start: 5;
-      grid-column-end: 8;
-      grid-row-start: 2;
-      grid-row-end: 4;
-      padding: 0;
-    }
-
-    footer>div>address {
-      grid-column-start: 9;
-      grid-column-end: 13;
-      grid-row-start: 2;
-      grid-row-end: 4;
-    }
-  }
-
-  @media (min-width: 1400px) {
-    .grid {
-      grid-template-columns: 1fr 25.625rem 53.625rem 1fr;
-      grid-template-rows: 1;
-      grid-auto-rows: repeat(26rem, 1fr);
-      grid-auto-flow: row;
-    }/* ====================================================================== *//* ============================ Header grid ============================= *//* ====================================================================== */
-
-    header.grid {
-      grid-template-columns: 1fr 82.25rem 1fr;
-    }
-
-    header.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-column-gap: 3rem;
-    }
-
-    hgroup {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 4;
-      grid-row-end: 11;
-      padding: 0;
-    }
-
-    nav {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 22;
-      grid-row-end: 30;
-      padding: 0;
-    }
-
-    .logo {
-      grid-column-start: 5;
-      grid-column-end: 13;
-      grid-row-start: 3;
-      grid-row-end: 20;
-    }
-
-    .pitch {
-      grid-column-start: 5;
-      grid-column-end: 11;
-      grid-row-start: 22;
-      grid-row-end: 28;
-      padding: 0;
-    }/* ====================================================================== *//* ========================= Alternative grid =========================== *//* ====================================================================== */
-
-    .grid.alternate {
-      grid-template-columns: 1fr 53.625rem 25.625rem 1fr;
-      grid-auto-rows: repeat(26rem, 1fr);
-      grid-auto-flow: row;
-    }
-
-    article {
-      /* max-height: 40rem; */
-      grid-row-gap: 1.5rem;
-      padding-bottom: calc(3 * 1.5rem);
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .grid>.img {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      padding: 0;
-    }
-
-    .grid>section {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-end: 15;
-      padding: 0;
-    }
-
-    .grid.alternate>.img {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      padding: 0;
-    }
-
-    .grid.alternate>section {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-end: 15;
-      padding: 0 0 0;
-    }/* ====================================================================== *//* ============================ Awards grid ============================= *//* ====================================================================== */
-
-    article.award.grid,
-    .form.grid {
-      grid-template-columns: 1fr 82.25rem 1fr;
-    }
-
-    .awards.grid>div,
-    .form.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-template-columns: repeat(10, 1fr);
-    }
-
-    .awards.grid>div>.title {
-      grid-column-start: 2;
-      grid-column-end: 5;
-    }
-
-    .awards.grid>div>.award-1 {
-      grid-column-start: 2;
-      grid-column-end: 4;
-    }
-
-    .awards.grid>div>.award-2 {
-      grid-column-start: 4;
-      grid-column-end: 6;
-      padding: 0;
-    }
-
-    .awards.grid>div>.award-3 {
-      grid-column-start: 6;
-      grid-column-end: 8;
-      padding: 0;
-    }
-
-    .awards.grid>div>.award-4 {
-      grid-column-start: 8;
-      grid-column-end: 10;
-      padding: 0;
-    }/* .awards.grid>div {
-      background: lime;
-    } *//* ====================================================================== *//* ============================ Form grid ============================= *//* ====================================================================== */
-
-    .form.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 6;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .form.grid>div>form {
-      grid-column-start: 2;
-      grid-column-end: 5;
-    }
-
-    .awards.grid {
-      grid-template-columns: 1fr 82.25rem 1fr;
-    }/* ====================================================================== *//* ============================ Footer grid ============================= *//* ====================================================================== */
-
-    footer.grid>div {
-      grid-column-start: 2;
-      grid-column-end: 4;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-column-gap: 3rem;
-    }
-  }/* 858px */
-}
 .brazo {
   background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532921561/Deming%20Factor/brazo-de-gaston-wine-branding-and-packaging.jpg");
 }
@@ -45752,4 +45752,4 @@ article {
 .logo {
 }
 
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=main.411782f0.css.map*/
