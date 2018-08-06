@@ -461,17 +461,17 @@
       padding: 0;
     }
     .logo {
-      grid-column-start: 5;
+      grid-column-start: 7;
       grid-column-end: 13;
       grid-row-start: 3;
       grid-row-end: 20;
     }
     .pitch {
-      grid-column-start: 5;
-      grid-column-end: 11;
+      grid-column-start: 7;
+      grid-column-end: 13;
       grid-row-start: 22;
-      grid-row-end: 28;
-      padding: 0px;
+      grid-row-end: 30;
+      padding: 0;
     }
     /* ====================================================================== */
     /* ========================= Alternative grid =========================== */
