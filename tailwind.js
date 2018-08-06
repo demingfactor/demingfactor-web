@@ -46,6 +46,8 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
+  'df-grey': '#8A8A8A',
+
   'df-purple': '#3626A7',
   'df-purple-dark': '#211761',
   'df-pink-lighter': '#F8DEDD',
@@ -259,6 +261,7 @@ module.exports = {
   */
 
   textSizes: {
+    'xxs': '.625rem', // 10px
     'xs': '.75rem', // 12px
     'sm': '.875rem', // 14px
     'base': '1rem', // 16px
@@ -472,7 +475,10 @@ module.exports = {
     '12': '3rem',
     '16': '4rem',
     '24': '6rem',
+    '28': '7rem',
+    '29': '7.25rem',
     '32': '8rem',
+    '34': '8.5rem',
     '48': '12rem',
     '64': '16rem',
     '108': '27rem',
@@ -524,6 +530,8 @@ module.exports = {
     '19': '4.75rem',
     '20': '5rem',
     '24': '6rem',
+    '28': '7rem',
+    '29': '7.25rem',
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
@@ -609,6 +617,8 @@ module.exports = {
   */
 
   maxWidth: {
+    '29': '7.25rem',
+    '34': '8.5rem',
     '4xs': '9rem',
     'xxxs': '10rem',
     'xxs': '21rem',

@@ -224,11 +224,11 @@ blockquote {
 }
 
 figure {
-  @apply .pt-3 .pb-6;
+  /* @apply .text-df-grey .pb-6; */
 }
 
 figcaption {
-  @apply .pb-6 .text-center;
+  @apply .font-bold .text-center .text-xxs .text-df-grey;
 }
 
 article {
@@ -255,6 +255,10 @@ article {
   background-repeat: no-repeat;
 }
 
+.awards.grid>div>div {
+  @apply .max-w-29;
+}
+
 @media (min-width: 368px) {
   h1 {
     @apply .text-4xl;
@@ -279,5 +283,13 @@ article {
   nav>ul>li {
     font-size: 1.875rem;
   }
-  .img {}
+  figcaption {
+    @apply .text-xs;
+  }
+}
+
+@media (min-width: 965px) {
+  .awards.grid>div>div {
+    @apply .max-w-34;
+  }
 }
