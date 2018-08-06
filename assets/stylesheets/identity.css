@@ -104,7 +104,7 @@ img {
 }
 
 strong {
-  @apply .font-bold .text-df-pink-lighter;
+  @apply .font-bold .text-df-pink-light;
 }
 
 em {
@@ -185,19 +185,19 @@ form>textarea {
 }
 
 form>button, .btn {
-  @apply .mb-6 .text-center .pb-1 .px-4 .bg-df-pink .opacity-75 .text-white .cursor-pointer;
+  @apply .mb-6 .text-center .pb-1 .px-4 .bg-df-pink .opacity-100 .text-white .cursor-pointer;
   padding-top: .3rem;
 }
 
 form>button:hover, .btn:hover {
   /* border: solid 1px #b8c2cc; */
-  @apply .opacity-100;
+  @apply .opacity-75;
   color: white;
 }
 
 form>button:focus, .btn:focus {
   /* border: solid 1px #b8c2cc; */
-  @apply .opacity-75;
+  @apply .opacity-100;
 }
 
 table {

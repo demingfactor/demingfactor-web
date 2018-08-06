@@ -226,8 +226,8 @@
     .form.grid>div>form {
       grid-column-start: 1;
       grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 7;
     }
     /*======================================================================= */
     /* ============================ Footer grid ============================= */
@@ -461,17 +461,17 @@
       padding: 0;
     }
     .logo {
-      grid-column-start: 5;
+      grid-column-start: 7;
       grid-column-end: 13;
       grid-row-start: 3;
       grid-row-end: 20;
     }
     .pitch {
-      grid-column-start: 5;
-      grid-column-end: 11;
+      grid-column-start: 7;
+      grid-column-end: 13;
       grid-row-start: 22;
-      grid-row-end: 28;
-      padding: 0px;
+      grid-row-end: 30;
+      padding: 0;
     }
     /* ====================================================================== */
     /* ========================= Alternative grid =========================== */
@@ -551,15 +551,15 @@
     /* ====================================================================== */
     .form.grid>div {
       grid-column-start: 2;
-      grid-column-end: 5;
+      grid-column-end: 3;
       grid-row-start: 1;
-      grid-row-end: 6;
+      grid-row-end: 7;
       padding-left: 0;
       padding-right: 0;
     }
     .form.grid>div>form {
       grid-column-start: 2;
-      grid-column-end: 5;
+      grid-column-end: 6;
     }
     .awards.grid {
       grid-template-columns: 1fr 82.25rem 1fr;
