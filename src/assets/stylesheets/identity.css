@@ -256,7 +256,7 @@ article {
 }
 
 .awards.grid>div>div {
-  @apply .max-w-29;
+  @apply .max-w-29 .m-auto;
 }
 
 @media (min-width: 368px) {
@@ -290,6 +290,6 @@ article {
 
 @media (min-width: 965px) {
   .awards.grid>div>div {
-    @apply .max-w-34;
+    @apply .max-w-34 .m-0;
   }
 }
