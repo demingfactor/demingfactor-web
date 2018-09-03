@@ -92,7 +92,7 @@ nav>ul>li {
 }
 
 section, hgroup {
-  @apply .px-6 .py-6;
+  @apply .px-6 .pt-8 .pb-12;
 }
 
 header>hgroup {
