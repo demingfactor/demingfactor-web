@@ -150,7 +150,7 @@
       padding: 0;
     }
     /* ====================================================================== */
-    /* ============================ Gallery grid ============================= */
+    /* ================== Gallery grid (min-width: 670px) =================== */
     /* ====================================================================== */
     .gallery {
       padding: 1.5rem 0 0;
@@ -159,62 +159,62 @@
       grid-column-start: 2;
       grid-column-end: 12;
       grid-row-start: 1;
-      grid-row-end: 15;
+      grid-row-end: 20;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: 1.5rem;
       grid-column-gap: 3rem;
     }
     .gallery.grid>div>.title {
       grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-end: 5;
       grid-row-start: 2;
       grid-row-end: 4;
     }
     .gallery.grid>div>figure:nth-child(2) {
       grid-column-start: 1;
-      grid-column-end: 2;
+      grid-column-end: 3;
       grid-row-start: 5;
       grid-row-end: 15;
       padding: 0;
     }
     .gallery.grid>div>figure:nth-child(3){
-      grid-column-start: 2;
-      grid-column-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 5;
       grid-row-start: 5;
       grid-row-end: 15;
       padding: 0;
     }
     .gallery.grid>div>figure:nth-child(4) {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 5;
-      grid-row-end: 15;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(5){
       grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 17;
-      grid-row-end: 27;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(6){
-      grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 17;
       grid-row-end: 27;
       padding: 0;
     }
-    .gallery.grid>div>figure:nth-child(7) {
+    .gallery.grid>div>figure:nth-child(5){
       grid-column-start: 3;
-      grid-column-end: 4;
+      grid-column-end: 5;
       grid-row-start: 17;
       grid-row-end: 27;
       padding: 0;
     }
+    .gallery.grid>div>figure:nth-child(6){
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 29;
+      grid-row-end: 39;
+      padding: 0;
+    }
+    .gallery.grid>div>figure:nth-child(7) {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 29;
+      grid-row-end: 39;
+      padding: 0;
+    }
     /* ====================================================================== */
-    /* ============================ Awards grid ============================= */
+    /* ==================== Awards grid (min-width: 670px) ==================== */
     /* ====================================================================== */
     .awards {
       padding: 1.5rem 0 0;
@@ -267,7 +267,7 @@
       background: aqua;
     } */
     /* ====================================================================== */
-    /* ============================ form grid ============================= */
+    /* =================== form grid (min-width: 670px) =================== */
     /* ====================================================================== */
     .form.grid {
       padding: 0;
@@ -284,7 +284,7 @@
       grid-row-end: 7;
     }
     /*======================================================================= */
-    /* ============================ Footer grid ============================= */
+    /* ================ Footer grid (min-width: 670px) ===================  */
     /* ====================================================================== */
     footer.grid>div {
       grid-column-start: 2;
@@ -330,7 +330,7 @@
       grid-column-gap: 3rem;
     }
     /* ====================================================================== */
-    /* ============================ Header grid ============================= */
+    /* ============================ Header grid (min-width: 965px) ============================= */
     /* ====================================================================== */
     header.grid, footer.grid, .awards.grid {}
     header.grid>div {
@@ -375,7 +375,7 @@
       font-size: 1.5rem;
     } */
     /* ====================================================================== */
-    /* ========================= Alternative grid =========================== */
+    /* ========================= Alternative grid (min-width: 965px) =========================== */
     /* ====================================================================== */
     .grid.alternate {
       grid-template-columns: repeat(10, 1fr) 25.625rem 1fr;
@@ -419,7 +419,39 @@
       padding: 0 0 0;
     }
     /* ====================================================================== */
-    /* ============================ Awards grid ============================= */
+    /* ============================ gallery grid (min-width: 965px) ============================= */
+    /* ====================================================================== */
+    .gallery.grid>div{
+      grid-row-end: 28;
+    }
+    .gallery.grid>div>figure:nth-child(2) {
+      grid-row-start: 5;
+      grid-row-end: 20;
+      padding: 0;
+    }
+    .gallery.grid>div>figure:nth-child(3){
+      grid-row-start: 5;
+      grid-row-end: 20;
+      padding: 0;
+    }
+    .gallery.grid>div>figure:nth-child(4) {
+      grid-row-start: 22;
+      grid-row-end: 37;
+    }
+    .gallery.grid>div>figure:nth-child(5){
+      grid-row-start: 22;
+      grid-row-end: 37;
+    }
+    .gallery.grid>div>figure:nth-child(6){
+      grid-row-start: 39;
+      grid-row-end: 54;
+    }
+    .gallery.grid>div>figure:nth-child(7) {
+      grid-row-start: 39;
+      grid-row-end: 54;
+    }
+    /* ====================================================================== */
+    /* ============================ Awards grid (min-width: 965px) ============================= */
     /* ====================================================================== */
     .awards.grid>div, .form.grid>div {
       grid-column-start: 2;
@@ -452,7 +484,7 @@
       background: tomato;
     } */
     /* ====================================================================== */
-    /* ============================ Footer grid ============================= */
+    /* ============================ Footer grid (min-width: 965px) ============================= */
     /* ====================================================================== */
     footer.grid>div {
       grid-row-end: 5;
@@ -486,7 +518,7 @@
       grid-auto-flow: row;
     }
     /* ====================================================================== */
-    /* ============================ Header grid ============================= */
+    /* ============================ Header grid (min-width: 1400px) ============================= */
     /* ====================================================================== */
     header.grid {
       grid-template-columns: 1fr 82.25rem 1fr;
@@ -528,7 +560,7 @@
       padding: 0;
     }
     /* ====================================================================== */
-    /* ========================= Alternative grid =========================== */
+    /* ========================= Alternative grid (min-width: 1400px) =========================== */
     /* ====================================================================== */
     .grid.alternate {
       grid-template-columns: 1fr 53.625rem 25.625rem 1fr;
@@ -564,7 +596,60 @@
       padding: 0 0 0;
     }
     /* ====================================================================== */
-    /* ============================ Awards grid ============================= */
+    /* ============================ gallery grid (min-width: 1400px) ============================= */
+    /* ====================================================================== */
+    .gallery.grid > div {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 19;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery.grid>div>.title {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .gallery.grid>div>figure:nth-child(2) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 20;
+    }
+    .gallery.grid>div>figure:nth-child(3){
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 20;
+    }
+    .gallery.grid>div>figure:nth-child(4) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 20;
+    }
+    .gallery.grid>div>figure:nth-child(5){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 22;
+      grid-row-end: 37;
+    }
+    .gallery.grid>div>figure:nth-child(6){
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 22;
+      grid-row-end: 37;
+    }
+    .gallery.grid>div>figure:nth-child(7) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 22;
+      grid-row-end: 37;
+    }
+
+
+    /* ====================================================================== */
+    /* ============================ Awards grid (min-width: 1400px) ============================= */
     /* ====================================================================== */
     article.award.grid, .form.grid {
       grid-template-columns: 1fr 82.25rem 1fr;
@@ -601,7 +686,7 @@
       background: lime;
     } */
     /* ====================================================================== */
-    /* ============================ Form grid ============================= */
+    /* ============================ Form grid (min-width: 1400px) ============================= */
     /* ====================================================================== */
     .form.grid>div {
       grid-column-start: 2;
@@ -619,7 +704,7 @@
       grid-template-columns: 1fr 82.25rem 1fr;
     }
     /* ====================================================================== */
-    /* ============================ Footer grid ============================= */
+    /* ============================ Footer grid (min-width: 1400px) ============================= */
     /* ====================================================================== */
     footer.grid>div {
       grid-column-start: 2;
