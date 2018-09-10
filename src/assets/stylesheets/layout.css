@@ -154,65 +154,26 @@
     /* ====================================================================== */
     .gallery {
       padding: 1.5rem 0 0;
+      grid-auto-rows: auto;
+    }
+    .gallery.grid>.title {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      grid-row-start: 2;
+      grid-row-end: 4;
     }
     .gallery.grid>div{
       grid-column-start: 2;
       grid-column-end: 12;
-      grid-row-start: 1;
-      grid-row-end: 20;
+      grid-row-start: 4;
+      grid-row-end: auto;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 1.5rem;
-      grid-column-gap: 3rem;
+      grid-template-rows: repeat(3, 40vw);
+      grid-gap: 1.5rem;
+      grid-auto-flow: column;
+      grid-auto-columns: 40vw;
     }
-    .gallery.grid>div>.title {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 2;
-      grid-row-end: 4;
-    }
-    .gallery.grid>div>figure:nth-child(2) {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 5;
-      grid-row-end: 15;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(3){
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 5;
-      grid-row-end: 15;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(4) {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 17;
-      grid-row-end: 27;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(5){
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 17;
-      grid-row-end: 27;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(6){
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 29;
-      grid-row-end: 39;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(7) {
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 29;
-      grid-row-end: 39;
-      padding: 0;
-    }
+
     /* ====================================================================== */
     /* ==================== Awards grid (min-width: 670px) ==================== */
     /* ====================================================================== */
@@ -422,34 +383,10 @@
     /* ============================ gallery grid (min-width: 965px) ============================= */
     /* ====================================================================== */
     .gallery.grid>div{
-      grid-row-end: 28;
+      grid-template-columns: repeat(3, 3fr);
+      grid-template-rows: repeat(2, 1fr);
     }
-    .gallery.grid>div>figure:nth-child(2) {
-      grid-row-start: 5;
-      grid-row-end: 20;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(3){
-      grid-row-start: 5;
-      grid-row-end: 20;
-      padding: 0;
-    }
-    .gallery.grid>div>figure:nth-child(4) {
-      grid-row-start: 22;
-      grid-row-end: 37;
-    }
-    .gallery.grid>div>figure:nth-child(5){
-      grid-row-start: 22;
-      grid-row-end: 37;
-    }
-    .gallery.grid>div>figure:nth-child(6){
-      grid-row-start: 39;
-      grid-row-end: 54;
-    }
-    .gallery.grid>div>figure:nth-child(7) {
-      grid-row-start: 39;
-      grid-row-end: 54;
-    }
+
     /* ====================================================================== */
     /* ============================ Awards grid (min-width: 965px) ============================= */
     /* ====================================================================== */
@@ -598,60 +535,58 @@
     /* ====================================================================== */
     /* ============================ gallery grid (min-width: 1400px) ============================= */
     /* ====================================================================== */
-    .gallery.grid > div {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-end: 19;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .gallery.grid>div>.title {
-      grid-column-start: 1;
-      grid-column-end: 4;
+
+    .gallery.grid>div,.gallery.grid>.title{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-template-columns: repeat(11, 1fr);
+      grid-gap: 1.5rem;
+      grid-auto-flow: column;
+    }
+    .gallery.grid>.title {
       grid-row-start: 2;
       grid-row-end: 4;
+      max-width: 11rem;
+      margin-left: 4em;
+    }
+    .gallery.grid>.title>h3 {
+      grid-column-start: 2;
+      grid-column-end: 10;
+    }
+    .gallery.grid>div>figure:first-child{
+      grid-column-start: 2;
+      grid-column-end: 5;
     }
     .gallery.grid>div>figure:nth-child(2) {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 5;
-      grid-row-end: 20;
+      grid-column-start: 5;
+      grid-column-end: 8;
+      padding: 0;
     }
-    .gallery.grid>div>figure:nth-child(3){
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 5;
-      grid-row-end: 20;
+    .gallery.grid>div>figure:nth-child(3) {
+      grid-column-start: 8;
+      grid-column-end: 11;
+      padding: 0;
     }
     .gallery.grid>div>figure:nth-child(4) {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 5;
-      grid-row-end: 20;
-    }
-    .gallery.grid>div>figure:nth-child(5){
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 22;
-      grid-row-end: 37;
-    }
-    .gallery.grid>div>figure:nth-child(6){
       grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 22;
-      grid-row-end: 37;
+      grid-column-end: 5;
+      padding: 0;
     }
-    .gallery.grid>div>figure:nth-child(7) {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 22;
-      grid-row-end: 37;
+    .gallery.grid>div>figure:nth-child(5) {
+      grid-column-start: 5;
+      grid-column-end: 8;
+      padding: 0;
     }
-
+    .gallery.grid>div>figure:nth-child(6) {
+      grid-column-start: 8;
+      grid-column-end: 11;
+      padding: 0;
+    }
 
     /* ====================================================================== */
     /* ============================ Awards grid (min-width: 1400px) ============================= */
     /* ====================================================================== */
-    article.award.grid, .form.grid {
+    .award.grid, .form.grid,.gallery.grid {
       grid-template-columns: 1fr 82.25rem 1fr;
     }
     .awards.grid>div, .form.grid>div {
