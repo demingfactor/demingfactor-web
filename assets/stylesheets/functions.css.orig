@@ -1,0 +1,17 @@
+.obj-cover {
+  object-fit: cover;
+}
+
+.obj-contain {
+  object-fit: contain;
+}
+
+/* .obj-contain {
+   object-fit: contain;
+ } */
+
+.pos-bottom {
+  object-position: bottom;
+}
+
+.logo {}
