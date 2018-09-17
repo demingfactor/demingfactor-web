@@ -13,5 +13,8 @@
 .pos-bottom {
   object-position: bottom;
 }
+.pos-c {
+  object-position: center;
+}
 
 .logo {}
