@@ -80,7 +80,6 @@ header {
 main {}
 
 footer {
-  @apply .px-6;
 }
 
 nav {
@@ -92,7 +91,7 @@ nav>ul>li {
 }
 
 section, hgroup {
-  @apply .px-6 .pt-8 .pb-12;
+  @apply .mx-auto .max-w-md .px-6 .pt-8 .pb-12;
 }
 
 header>hgroup {
