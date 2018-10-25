@@ -21,6 +21,16 @@
   background-size: 1500px 750px;
   background-position: 55% 60%;
 }
+.bg-df-hero {
+  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1538011039/df_background.svg");
+  /* background-color: grey; */
+  background-repeat: no-repeat;
+  /* background-size: 90% 90%; */
+  background-position: 0% 70%;
+   -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
 
 @media (min-width: 368px) {}
 
