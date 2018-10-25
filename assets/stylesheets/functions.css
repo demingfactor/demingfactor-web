@@ -1,0 +1,106 @@
+.obj-cover {
+  object-fit: cover;
+}
+
+.obj-contain {
+  object-fit: contain;
+}
+
+/* .obj-contain {
+   object-fit: contain;
+ } */
+
+.pos-bottom {
+  object-position: bottom;
+}
+.pos-c {
+  object-position: center;
+}
+
+.logo {}
+
+
+
+/* Homepage Header Graphic Positioning */
+
+.header-graphic-container{
+  height: 58.5rem;
+}
+.over-sized-header-graphic{
+  display: none;
+}
+@media (min-width: 340px) {
+  .header-graphic-container{
+    height: 56.2rem;
+  }
+  .over-sized-header-graphic{
+    margin-top: -31rem;
+    margin-right: -51rem;
+    height: 120rem;
+  }
+}
+@media (min-width: 390px) {
+  .header-graphic-container{
+    height: 54rem;
+  }
+}
+@media (min-width: 450px) {
+  .header-graphic-container{
+    height: 56.2rem;
+  }
+}
+@media (min-width: 495px) {
+  .header-graphic-container{
+    height: 54rem;
+  }
+}
+@media (min-width: 550px){
+  .over-sized-header-graphic{
+    display: block;
+    margin-top: -25rem;
+    margin-right: -48rem;
+    height: 120rem;
+  }
+}
+@media (min-width: 615px){
+  .over-sized-header-graphic{
+    margin-top: -30rem;
+    margin-right: -45rem;
+  }
+}
+@media (min-width: 670px){
+  .header-graphic-container{
+    height: 58.5rem;
+  }
+  .over-sized-header-graphic{
+    margin-top: -22rem;
+    margin-right: -40rem;
+    height: 120rem;
+  }
+}
+@media (min-width: 768px){
+  .over-sized-header-graphic{
+    margin-top: -22rem;
+    margin-right: -35rem;
+    height: 120rem;
+  }
+}
+@media (min-width: 965px){
+  .header-graphic-container{
+    height: 54rem;
+  }
+}
+@media (min-width: 992px){
+  .over-sized-header-graphic{
+    margin-top: -30rem;
+    margin-right: -25rem;
+    height: 120rem;
+  }
+}
+@media (min-width: 1250px){
+  .over-sized-header-graphic{
+    margin-top: -45rem;
+    margin-right: -20rem;
+    height: 160rem;
+  }
+}
