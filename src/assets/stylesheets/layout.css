@@ -115,16 +115,16 @@
     nav {
       grid-column-start: 1;
       grid-column-end: 10;
-      grid-row-start: 18;
-      grid-row-end: 26;
+      grid-row-start: 27;
+      grid-row-end: 33;
       padding: 0;
     }
     .pitch {
       font-size: 1.25rem;
       grid-column-start: 1;
       grid-column-end: 12;
-      grid-row-start: 27;
-      grid-row-end: 33;
+      grid-row-start: 18;
+      grid-row-end: 26;
       padding: 0px;
     }
     /* .pitch>p {
@@ -332,7 +332,7 @@
     nav {
       grid-column-start: 1;
       grid-column-end: 6;
-      grid-row-start: 22;
+      grid-row-start: 24;
       grid-row-end: 30;
       padding: 0;
     }
@@ -343,10 +343,10 @@
       grid-row-end: 20;
     }
     .pitch {
-      grid-column-start: 6;
+      grid-column-start: 1;
       grid-column-end: 11;
-      grid-row-start: 22;
-      grid-row-end: 28;
+      grid-row-start: 15;
+      grid-row-end: 20;
       padding: 0px;
     }
     /* .pitch>p {
@@ -507,10 +507,10 @@
       grid-row-end: 20;
     }
     .pitch {
-      grid-column-start: 7;
+      grid-column-start: 1;
       grid-column-end: 13;
-      grid-row-start: 22;
-      grid-row-end: 30;
+      grid-row-start: 13;
+      grid-row-end: 17;
       padding: 0;
     }
     /* ====================================================================== */
