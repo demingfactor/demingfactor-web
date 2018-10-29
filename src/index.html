@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta description="Add description here">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Award winning Australian Design Agency. Graphic Print Design. UX Design. Design Strategy.">
   <title>DemingFactor Media Design</title>
@@ -11,27 +14,39 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109687003-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-109687003-1');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-109687003-1');
+  </script>
 </head>
 
 <body class="bg-df-purple-dark">
-  <div class="">
-
-    <header class="grid col min-h-216 pb-6 bg-df-purple max-w-container">
-      <div class="home Hero w-32 sm:w-95 sm:h-62 px-6 smd:px-0 pt-6">
-        <img src="https://res.cloudinary.com/demingfactor/image/upload/v1532936977/df-icon.svg" alt="DemingFactor Logo">
+  <header class="max-w-container grid col bg-df-purple min-h-216">
+    <div class="relative">
+      <div class="header-graphic-container absolute pin-r pin-t min-h-216 px-6 smd:px-0 overflow-hidden">
+        <svg class="over-sized-header-graphic" viewBox="0 0 1349 2835" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#f8dedd" fill-rule="evenodd">
+            <path d="m301.094252 447.151476v694.848524h258.250369v-447.145613h322.815903l-295.377757-440.720299h675.230083v-254.134088h-1132.01285l296.989689
+                  447.151476z"
+              transform="matrix(1 0 0 -1 0 1142)" />
+            <path d="m0 0v1569h550.655672c442.291383 0 798.344328-351.3712 798.344328-784.495973
+                  0-433.132825-356.052945-784.504027-798.344328-784.504027zm550.655672 1246.36739h-196.819342v-923.726728h196.819342c263.164662
+                  0 442.291383 209.941554 442.291383 461.863365 0 251.921813-179.126721 461.863363-442.291383 461.863363z"
+              transform="matrix(-1 0 0 -1 1349 2835)" />
+          </g>
+        </svg>
       </div>
 
-      <hgroup class="ml-0 text-df-pink-lighter">
-        <h4 class="px-6 smd:px-0">DemingFactor</h4>
-        <h1 class="px-6 smd:px-0">Collaborative <br> Agile Design</h1>
+      <hgroup class="ml-0 text-df-pink-lighter px-6 smd:px-0 pt-0 pb-8 md:pb-0">
+        <span class="ml-0 flex flex-col items-start sm:flex-row sm:items-center mb-6">
+          <img class="m-0 h-auto w-auto sm:h-6" src="https://res.cloudinary.com/demingfactor/image/upload/v1532936977/df-icon.svg"
+            alt="DemingFactor Logo">
+          <h4 class="mt-4 pt-0 sm:pl-4 sm:mt-1 md:text-3xl leading-none">DemingFactor</h4>
+        </span>
+        <h1 class="p-0 -ml-2px">Collaborative <br> Agile Design</h1>
       </hgroup>
-
       <nav>
         <ul class="px-6 smd:px-0">
           <li class=""><a class="text-df-green-light" href="#graphic-and-print">Graphic & Print,</a></li>
@@ -40,31 +55,26 @@
           <li class=""><a class="text-df-green-light" href="#digital-marketing">Digital Marketing.</a></li>
         </ul>
       </nav>
-
-      <div class="pitch ml-0 max-w-md text-df-pink-lighter pb-12">
-        <p class="px-6 smd:px-0 -mt-px">DemingFactor is an award winning design agency that specialises in solving
-          problems
-          that span the digital world and the real world. Our approach is collaborative, responsive and agile and
-          we’d love to hear about your projects</p>
-      </div>
-  </div>
+      <section class="ml-0 pitch px-6 smd:px-0 max-w-md text-white">
+        <p class="pt-0 -mt-px">DemingFactor is an award winning design agency that specialises in solving problems that
+          span the digital world and the real world. Our approach is collaborative, responsive and agile and we’d love
+          to hear about your projects</p>
+      </section>
+    </div>
   </header>
 
-  <main class="bg-df-yellow-light text-df-purple max-w-container">
+  <main class="max-w-container bg-df-yellow-light text-df-purple">
 
     <article id="graphic-and-print" class="grid">
       <div class="img cantina-rotino"></div>
 
-      <section>
-        <h2 class="px-6 smd:px-0">Graphic <strong>&</strong> Print</h2>
-        <p class="px-6 smd:px-0">Every design sends a message. When you get the message right for your tribe, they
-          can’t help
-          but be
-          drawn
-          to it and your laser focussed signal separates from the noise.</p>
+      <section class="px-6 smd:px-0">
+        <h2 class="">Graphic <strong>&</strong> Print</h2>
+        <p>Every design sends a message. When you get the message right for your tribe, they can’t help but be drawn to
+          it and your laser focussed signal separates from the noise.</p>
 
         <figure>
-          <ul class="px-6 smd:px-0 max-w-sm flex flex-row flex-wrap">
+          <ul class="max-w-sm flex flex-row flex-wrap">
             <li class="">Packaging, &nbsp;</li>
             <li class="">Wine, &nbsp;</li>
             <li class="">Cross Media Campaigns, &nbsp;</li>
@@ -82,7 +92,7 @@
     <article id="user-interfaces-and-experience" class="grid alternate bg-df-purple text-df-yellow-light">
       <div class="img mitimes"><a href="./case-study-mitimes.html" class="block h-full w-full"></a></div>
 
-      <section class="">
+      <section class="px-6 smd:px-0">
         <h2 class="px-6 smd:px-0 text-df-green-light">User Interfaces</h2>
         <p class="px-6 smd:px-0">Most people don’t care about how awesome your product is, they care about how awesome
           they
@@ -113,7 +123,7 @@
     <article id="branding-and-strategy" class="grid bg-df-purpleer">
       <div class="img  brazo"></div>
 
-      <section>
+      <section class="px-6 smd:px-0">
         <h2 class="px-6 smd:px-0">Branding <strong>&</strong> Strategy</h2>
         <p class="px-6 smd:px-0"> class="px-6 smd:px-0"There are no shortage of designers who like to make pretty
           things. We come from
@@ -143,7 +153,7 @@
     <article id="digital-marketing" class="grid alternate bg-df-purple text-df-yellow-light text-df-yellow-light">
       <div class="img my-money-zen"></div>
 
-      <section class="">
+      <section class="px-6 smd:px-0">
         <h2 class="px-6 smd:px-0 text-df-green-light">Digital Marketing</h2>
         <p class="px-6 smd:px-0">Technology has connected people from all over the world. Being visible when your
           potential
@@ -256,14 +266,12 @@
 
       </div>
     </section>
-
   </main>
 
   <footer class="text-df-purple bg-df-yellow-light max-w-container">
     <div class="df-footer-image h-48 w-full md:h-72"></div>
-
-    <section class="form grid max-w-full bg-white">
-      <div class="pt-6">
+    <section class="form grid max-w-full bg-white ">
+      <div class="pt-6 px-6 smd:px-0">
         <form class="max-w-xs min-w-xxs p-0" action="https://www.getdrip.com/forms/13314262/submissions" method="post"
           data-drip-embedded-form="13314262">
           <p data-drip-attribute="description">
@@ -277,10 +285,9 @@
         </form>
       </div>
     </section>
-    <section class="max-w-full grid footer">
+    <section class="max-w-full grid footer px-6 smd:px-0">
       <div class="pb-4 content-center">
-
-        <hgroup class="px-0">
+        <hgroup class="px-0 mx-0">
           <h3 class="mb-1">Deming Factor</h3>
           <h5 class="pb-0">Strategy Driven Design</h5>
         </hgroup>
@@ -295,8 +302,6 @@
       </div>
     </section>
   </footer>
-  </div>
-  </div>
 </body>
 
 </html>
