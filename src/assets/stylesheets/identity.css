@@ -138,7 +138,7 @@ h6 {
 }
 
 p {
-  @apply text-left .text-base .leading-normal .font-normal .pt-6;
+  @apply text-left .text-20px .leading-normal .font-normal .pt-6;
 }
 
 aside {

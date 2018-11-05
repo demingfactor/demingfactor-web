@@ -267,6 +267,7 @@ module.exports = {
     'sm': '.875rem', // 14px
     'base': '1rem', // 16px
     'lg': '1.125rem', // 18px
+    '20px': '1.25rem', // 20px
     'xl': '1.375rem', // 22px
     '2xl': '1.5rem', // 24px
     '3xl': '1.875rem', // 30px
