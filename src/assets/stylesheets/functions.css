@@ -18,8 +18,15 @@
 }
 
 .logo {}
-
-
+.logo-hover{
+  transition: 0.2s
+}
+.logo-hover:hover{
+  transform: scale(1.1);
+}
+.custom-shadow{
+  box-shadow: 0 1px 9px 0px rgba(0,0,0,.5);
+}
 
 /* Homepage Header Graphic Positioning */
 
