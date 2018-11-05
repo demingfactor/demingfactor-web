@@ -1,0 +1,66 @@
+.brazo {
+  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532921561/Deming%20Factor/brazo-de-gaston-wine-branding-and-packaging.jpg");
+}
+
+.cantina-rotino {
+  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532921604/Deming%20Factor/cantina-rotino-award-winning-spaghetti-packaging.jpg");
+}
+
+.mitimes {
+  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1537772179/interface_mocuo.png");
+}
+
+.my-money-zen {
+  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532921572/Deming%20Factor/my-money-zen-budgeting-made-easy.png");
+}
+
+.df-footer-image {
+  background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1532936977/df-footer.svg");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: 1500px 750px;
+  background-position: 55% 60%;
+}
+.bg-df-hero {
+ background-image: url("https://res.cloudinary.com/demingfactor/image/upload/v1538011039/df_background.svg");
+background-repeat: no-repeat;
+background-size: 124%;
+background-position: 11% 7rem;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+}
+
+@media (min-width: 368px) {}
+
+@media (min-width: 450px) {}
+
+@media (min-width: 575px) {
+  .bg-df-hero {
+      background-size: 124%;
+      background-position: 11% 13rem;
+      }
+}
+
+
+@media (min-width: 992px) {
+  .bg-df-hero {
+    background-size: 80%;
+    background-position: 200% 0rem;
+  }
+}
+
+/* tailwind md */
+
+@media (min-width: 768px) {
+  .df-footer-image {
+    background-size: 3000px 1500px;
+  }
+}
+
+@media (min-width: 1200px){
+  .bg-df-hero {
+    background-size: 90%;
+    background-position: 34vw -26vw;
+}
+}
