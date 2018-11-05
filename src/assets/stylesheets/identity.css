@@ -94,7 +94,7 @@ hgroup {
   @apply mx-auto .max-w-md;
 }
 section {
-  @apply mx-auto .max-w-md pt-3 pb-9;
+  @apply mx-auto .max-w-lg pt-3 pb-9;
 }
 
 img {
