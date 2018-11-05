@@ -94,7 +94,7 @@ hgroup {
   @apply mx-auto .max-w-md;
 }
 section {
-  @apply mx-auto .max-w-md pt-3 pb-9;
+  @apply mx-auto .max-w-lg pt-3 pb-9;
 }
 
 img {
@@ -138,7 +138,7 @@ h6 {
 }
 
 p {
-  @apply text-left .text-base .leading-normal .font-normal .pt-6;
+  @apply text-left .text-20px .leading-normal .font-normal .pt-6;
 }
 
 aside {
