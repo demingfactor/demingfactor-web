@@ -163,5 +163,22 @@ module.exports = {
         minifyURLs: true
       }
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'case-study-brazo.html',
+      template: './src/case-study-brazo.html',
+      minify: isProd && {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      }
+    }),
   ].filter(Boolean)
 }
