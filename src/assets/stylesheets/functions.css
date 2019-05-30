@@ -1,9 +1,9 @@
 .obj-cover {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .obj-contain {
-  object-fit: contain;
+    object-fit: contain;
 }
 
 /* .obj-contain {
@@ -11,103 +11,147 @@
  } */
 
 .pos-bottom {
-  object-position: bottom;
+    object-position: bottom;
 }
+
 .pos-c {
-  object-position: center;
+    object-position: center;
 }
 
 .logo {}
-.logo-hover{
-  transition: 0.2s
+
+.logo-hover {
+    transition: 0.2s
 }
-.logo-hover:hover{
-  transform: scale(1.1);
+
+.logo-hover:hover {
+    transform: scale(1.1);
 }
-.custom-shadow{
-  box-shadow: 0 1px 9px 0px rgba(0,0,0,.5);
+
+.custom-shadow {
+    box-shadow: 0 1px 9px 0px rgba(0, 0, 0, .5);
+}
+
+.list-upper-alpha {
+    list-style: upper-alpha;
+}
+
+body.terms li {
+    margin-bottom: 0.5rem;
+}
+
+body.terms .decimal ol {
+    counter-reset: item
+}
+
+body.terms .normal ol {
+    counter-increment: 1.1;
+}
+
+body.terms li {
+    /* display: block */
+}
+
+body.terms .decimal li:before {
+    content: counters(item, ". ") " ";
+    counter-increment: item;
+    margin-right: 1rem;
 }
 
 /* Homepage Header Graphic Positioning */
 
-.header-graphic-container{
-  height: 58.5rem;
-}
-.over-sized-header-graphic{
-  display: none;
-}
-@media (min-width: 340px) {
-  .header-graphic-container{
-    height: 56.2rem;
-  }
-  .over-sized-header-graphic{
-    margin-top: -31rem;
-    margin-right: -51rem;
-    height: 120rem;
-  }
-}
-@media (min-width: 390px) {
-  .header-graphic-container{
-    height: 54rem;
-  }
-}
-@media (min-width: 450px) {
-  .header-graphic-container{
-    height: 56.2rem;
-  }
-}
-@media (min-width: 495px) {
-  .header-graphic-container{
-    height: 54rem;
-  }
-}
-@media (min-width: 550px){
-  .over-sized-header-graphic{
-    display: block;
-    margin-top: -25rem;
-    margin-right: -48rem;
-    height: 120rem;
-  }
-}
-@media (min-width: 615px){
-  .over-sized-header-graphic{
-    margin-top: -30rem;
-    margin-right: -45rem;
-  }
-}
-@media (min-width: 670px){
-  .header-graphic-container{
+.header-graphic-container {
     height: 58.5rem;
-  }
-  .over-sized-header-graphic{
-    margin-top: -22rem;
-    margin-right: -40rem;
-    height: 120rem;
-  }
 }
-@media (min-width: 768px){
-  .over-sized-header-graphic{
-    margin-top: -22rem;
-    margin-right: -35rem;
-    height: 120rem;
-  }
+
+.over-sized-header-graphic {
+    display: none;
 }
-@media (min-width: 965px){
-  .header-graphic-container{
-    height: 54rem;
-  }
+
+@media (min-width: 340px) {
+    .header-graphic-container {
+        height: 56.2rem;
+    }
+
+    .over-sized-header-graphic {
+        margin-top: -31rem;
+        margin-right: -51rem;
+        height: 120rem;
+    }
 }
-@media (min-width: 992px){
-  .over-sized-header-graphic{
-    margin-top: -30rem;
-    margin-right: -25rem;
-    height: 120rem;
-  }
+
+@media (min-width: 390px) {
+    .header-graphic-container {
+        height: 54rem;
+    }
 }
-@media (min-width: 1250px){
-  .over-sized-header-graphic{
-    margin-top: -45rem;
-    margin-right: -20rem;
-    height: 160rem;
-  }
+
+@media (min-width: 450px) {
+    .header-graphic-container {
+        height: 56.2rem;
+    }
+}
+
+@media (min-width: 495px) {
+    .header-graphic-container {
+        height: 54rem;
+    }
+}
+
+@media (min-width: 550px) {
+    .over-sized-header-graphic {
+        display: block;
+        margin-top: -25rem;
+        margin-right: -48rem;
+        height: 120rem;
+    }
+}
+
+@media (min-width: 615px) {
+    .over-sized-header-graphic {
+        margin-top: -30rem;
+        margin-right: -45rem;
+    }
+}
+
+@media (min-width: 670px) {
+    .header-graphic-container {
+        height: 58.5rem;
+    }
+
+    .over-sized-header-graphic {
+        margin-top: -22rem;
+        margin-right: -40rem;
+        height: 120rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .over-sized-header-graphic {
+        margin-top: -22rem;
+        margin-right: -35rem;
+        height: 120rem;
+    }
+}
+
+@media (min-width: 965px) {
+    .header-graphic-container {
+        height: 54rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .over-sized-header-graphic {
+        margin-top: -30rem;
+        margin-right: -25rem;
+        height: 120rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    .over-sized-header-graphic {
+        margin-top: -45rem;
+        margin-right: -20rem;
+        height: 160rem;
+    }
 }
