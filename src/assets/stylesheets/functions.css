@@ -68,6 +68,8 @@ body.terms .decimal li:before {
     display: none;
 }
 
+
+
 @media (min-width: 340px) {
     .header-graphic-container {
         height: 56.2rem;
@@ -146,6 +148,13 @@ body.terms .decimal li:before {
         margin-right: -25rem;
         height: 120rem;
     }
+
+}
+
+@media (min-width: 1109px) {
+    .sticky {
+        position: sticky;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -154,4 +163,6 @@ body.terms .decimal li:before {
         margin-right: -20rem;
         height: 160rem;
     }
+
+
 }

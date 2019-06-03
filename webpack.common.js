@@ -1,4 +1,4 @@
-const webpack = require('webpack')
+const webpack = require("webpack");
 
 //////////////////////////////////////////////////////////////////////
 // 1. ADD LOADERS TO HELP WEBPACK UNDERSTAND THINGS.
@@ -17,22 +17,22 @@ const UrlLoader = require("url-loader");
 //////////////////////////////////////////////////////////////////////
 
 // Autogenerates index.js into a index.html with auto script tags
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // Bundles (CSS) to own CSS file rather than embedded in CSS.
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 //////////////////////////////////////////////////////////////////////
 // 2B. ADD PLUGINS THAT TIDY UP THINGS
 //////////////////////////////////////////////////////////////////////
 
 // Purges unused CSS (Great for use with a style framework like Tailwind)
-const PurgecssPlugin = require('purgecss-webpack-plugin');
+const PurgecssPlugin = require("purgecss-webpack-plugin");
 
 // Wipes docs directory on recompiling, keeping the directory clean.
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 //----------------------------------------------------------------------//
 
@@ -40,9 +40,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 // 3. Set some constants
 //////////////////////////////////////////////////////////////////////
 
-const tailwindcss = require('tailwindcss');
-const path = require('path');
-const isProd = process.env.NODE_ENV === 'production';
+const tailwindcss = require("tailwindcss");
+const path = require("path");
+const isProd = process.env.NODE_ENV === "production";
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in
 // class names.
@@ -50,14 +50,14 @@ const isProd = process.env.NODE_ENV === 'production';
 // https://github.com/FullHuman/purgecss#extractor
 class TailwindExtractor {
   static extract(content) {
-    return content.match(/[A-z0-9-:\/]+/g) || []
+    return content.match(/[A-z0-9-:\/]+/g) || [];
   }
 }
 
 //---------------------  Real code starts here  ------------------------//
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: ["./src/index.js"],
   module: {
     rules: [
       // {
@@ -72,50 +72,60 @@ module.exports = {
       // },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [{
-          loader: 'url-loader', // url-loader defaults back to loading with file-loader if size over size limit.
-          options: {
-            limit: 8000, // Convert files < 8kb to base64 strings
-            name: 'assets/fonts/[name].[ext]'
+        use: [
+          {
+            loader: "url-loader", // url-loader defaults back to loading with file-loader if size over size limit.
+            options: {
+              limit: 8000, // Convert files < 8kb to base64 strings
+              name: "assets/fonts/[name].[ext]"
+            }
           }
-        }]
+        ]
       }
     ]
   },
   plugins: [
     // Clean the 'docs' folder before each build is run
     console.log("Running..."),
-    isProd && new CleanWebpackPlugin(['docs']),
-    isProd && new PurgecssPlugin({
-      paths: glob.sync(path.join(__dirname, 'src') + '/**/*'),
-      extractors: [{
-        extractor: TailwindExtractor,
-        // File extensions to include when scanning for class names.
-        extensions: ['html', 'js']
-      }]
-    }),
-    new ExtractTextPlugin('[name].css'),
-    new CopyWebpackPlugin([{
-      context: 'src/assets/stylesheets/',
-      from: '*.css',
-      to: path.resolve(__dirname, 'assets/stylesheets/')
-    }, {
-      context: 'src/assets/images/',
-      from: '*.png',
-      to: path.resolve(__dirname, 'assets/images/')
-    }, {
-      context: 'src/assets/stylesheets',
-      from: '*.svg',
-      to: path.resolve(__dirname, 'assets/images')
-    }, {
-      context: 'src/assets/stylesheets/fonts',
-      from: '*/*',
-      test: /\.(woff|woff2|eot|ttf|otf)$/,
-      to: path.resolve(__dirname, 'assets/stylesheets/fonts')
-    }]),
+    isProd && new CleanWebpackPlugin(["docs"]),
+    isProd &&
+      new PurgecssPlugin({
+        paths: glob.sync(path.join(__dirname, "src") + "/**/*"),
+        extractors: [
+          {
+            extractor: TailwindExtractor,
+            // File extensions to include when scanning for class names.
+            extensions: ["html", "js"]
+          }
+        ]
+      }),
+    new ExtractTextPlugin("[name].css"),
+    new CopyWebpackPlugin([
+      {
+        context: "src/assets/stylesheets/",
+        from: "*.css",
+        to: path.resolve(__dirname, "assets/stylesheets/")
+      },
+      {
+        context: "src/assets/images/",
+        from: "*.png",
+        to: path.resolve(__dirname, "assets/images/")
+      },
+      {
+        context: "src/assets/stylesheets",
+        from: "*.svg",
+        to: path.resolve(__dirname, "assets/images")
+      },
+      {
+        context: "src/assets/stylesheets/fonts",
+        from: "*/*",
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        to: path.resolve(__dirname, "assets/stylesheets/fonts")
+      }
+    ]),
     new HtmlWebpackPlugin({
       inject: true,
-      template: './src/index.html',
+      template: "./src/index.html",
       minify: isProd && {
         removeComments: true,
         collapseWhitespace: true,
@@ -131,8 +141,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      filename: 'case-study-mitimes.html',
-      template: './src/case-study-mitimes.html',
+      filename: "case-study-mitimes.html",
+      template: "./src/case-study-mitimes.html",
       minify: isProd && {
         removeComments: true,
         collapseWhitespace: true,
@@ -148,8 +158,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      filename: 'case-study-cantina-rotino.html',
-      template: './src/case-study-cantina-rotino.html',
+      filename: "case-study-cantina-rotino.html",
+      template: "./src/case-study-cantina-rotino.html",
       minify: isProd && {
         removeComments: true,
         collapseWhitespace: true,
@@ -165,8 +175,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      filename: 'case-study-brazo.html',
-      template: './src/case-study-brazo.html',
+      filename: "case-study-brazo.html",
+      template: "./src/case-study-brazo.html",
       minify: isProd && {
         removeComments: true,
         collapseWhitespace: true,
@@ -180,5 +190,22 @@ module.exports = {
         minifyURLs: true
       }
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: "master-service-agreement.html",
+      template: "./src/master-service-agreement.html",
+      minify: isProd && {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      }
+    })
   ].filter(Boolean)
-}
+};

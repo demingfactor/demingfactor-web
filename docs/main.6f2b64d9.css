@@ -31680,12 +31680,6 @@ body.terms .decimal li:before {
   }
 }
 
-@media (min-width: 1109px) {
-  .sticky {
-    position: sticky;
-  }
-}
-
 @media (min-width: 1250px) {
   .over-sized-header-graphic {
     margin-top: -45rem;
@@ -60708,4 +60702,4 @@ body.terms .decimal li:before {
 }
 
 
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=main.6f2b64d9.css.map*/

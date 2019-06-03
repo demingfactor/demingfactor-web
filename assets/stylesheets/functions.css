@@ -36,6 +36,28 @@
     list-style: upper-alpha;
 }
 
+body.terms li {
+    margin-bottom: 0.5rem;
+}
+
+body.terms .decimal ol {
+    counter-reset: item
+}
+
+body.terms .normal ol {
+    counter-increment: 1.1;
+}
+
+body.terms li {
+    /* display: block */
+}
+
+body.terms .decimal li:before {
+    content: counters(item, ". ") " ";
+    counter-increment: item;
+    margin-right: 1rem;
+}
+
 /* Homepage Header Graphic Positioning */
 
 .header-graphic-container {
@@ -45,6 +67,8 @@
 .over-sized-header-graphic {
     display: none;
 }
+
+
 
 @media (min-width: 340px) {
     .header-graphic-container {
@@ -124,6 +148,13 @@
         margin-right: -25rem;
         height: 120rem;
     }
+
+}
+
+@media (min-width: 1109px) {
+    .sticky {
+        position: sticky;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -132,4 +163,6 @@
         margin-right: -20rem;
         height: 160rem;
     }
+
+
 }
