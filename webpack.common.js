@@ -197,8 +197,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      filename: "master-service-agreement.html",
-      template: "./src/master-service-agreement.html",
+      filename: "master-services-agreement.html",
+      template: "./src/master-services-agreement.html",
       minify: isProd && {
         removeComments: true,
         collapseWhitespace: true,
