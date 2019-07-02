@@ -26,6 +26,10 @@ if (tableOfContents != null && tableOfContents !== undefined) {
 
       const address = document.createElement("a");
       address.setAttribute("href", "#" + urlId);
+      address.setAttribute(
+        "class",
+        "text-df-purple no-underline border-b border-df-purple"
+      );
       address.innerHTML = heading.innerText;
       menuItem.insertAdjacentElement("beforeend", address);
     }

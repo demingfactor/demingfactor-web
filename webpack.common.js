@@ -116,11 +116,16 @@ module.exports = {
         from: "*.svg",
         to: path.resolve(__dirname, "assets/images")
       },
+      // {
+      //   context: "src/assets/stylesheets/fonts",
+      //   from: "*/*",
+      //   test: /\.(woff|woff2|eot|ttf|otf)$/,
+      //   to: path.resolve(__dirname, "assets/stylesheets/fonts")
+      // },
       {
-        context: "src/assets/stylesheets/fonts",
-        from: "*/*",
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        to: path.resolve(__dirname, "assets/stylesheets/fonts")
+        context: "src/",
+        from: "*.pdf",
+        to: path.resolve(__dirname, "docs")
       }
     ]),
     new HtmlWebpackPlugin({
@@ -192,8 +197,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      filename: "master-service-agreement.html",
-      template: "./src/master-service-agreement.html",
+      filename: "master-services-agreement.html",
+      template: "./src/master-services-agreement.html",
       minify: isProd && {
         removeComments: true,
         collapseWhitespace: true,
